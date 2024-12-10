@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/736x/d3/0f/61/d30f612d370a2b0d73c960303d831ece.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        #chat {
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            background-image: url('https://i.pinimg.com/736x/15/34/92/153492d5cc36e23919920d27ab4b08cc.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+        }
+        #messages {
+            width: 100%;
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            background: none; /* Eliminar fondo translúcido */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .message {
+            max-width: 70%;
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        .user-message {
+            align-self: flex-end;
+            background: #00BCD4; /* Azul celeste */
+            color: white;
+            border-bottom-right-radius: 0;
+        }
+        .bot-message {
+            align-self: flex-start;
+            background: #FFC107;
+            color: black;
+            border-bottom-left-radius: 0;
+        }
+        .input-container {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            justify-content: space-between; /* Asegura separación entre el input y el botón */
+            align-items: center;
+        }
+        #user-input {
+            flex: 1; /* Toma todo el espacio disponible */
+            max-width: calc(100% - 90px); /* Un poco más pequeño que el contenedor para dejar espacio al botón */
+            padding: 15px; /* Más espacio interno */
+            border: 2px solid rgba(0, 188, 212, 0.5); /* Borde azul celeste translúcido */
+            border-radius: 25px; /* Bordes redondeados */
+            background: rgba(255, 255, 255, 0.7); /* Blanco translúcido */
+            color: #333; /* Texto oscuro */
+            font-size: 16px; /* Tamaño de texto aumentado */
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        #user-input:focus {
+            border-color: #00BCD4; /* Azul celeste más brillante al enfocarse */
+            box-shadow: 0 0 8px rgba(0, 188, 212, 0.7); /* Sombra brillante */
+        }
+        #user-input::placeholder {
+            color: rgba(51, 51, 51, 0.6); /* Placeholder oscuro */
+            font-style: italic;
+        }
+        #send {
+            padding: 15px 20px; /* Botón más grande */
+            border: none;
+            background: #00BCD4;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 16px; /* Tamaño de texto aumentado */
+            letter-spacing: 1px;
+        }
+        #send:hover {
+            background: #5ca4e3;
+            transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+        }
+    </style>      
+</head>
+<body>
+    <div id="chat">
+        <div id="messages"></div>
+        <div class="input-container">
+            <input id="user-input" type="text" placeholder="Escribe tu mensaje...">
+            <button id="send">Enviar</button>
+        </div>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="app.js"></script>
+</body>
+</html>

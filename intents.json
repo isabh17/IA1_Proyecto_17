@@ -1,0 +1,214 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hola", "¿Cómo estás?", "Buenos días", "¿Hay alguien ahí?", "Hola, ¿qué tal?", "Hey", "¡Hola!", "¿Qué tal?", "Buenas tardes", "Buenas noches", "Saludos", "Hola chatbot"],
+      "responses": ["¡Hola!", "Qué bueno verte de nuevo", "Hola, ¿cómo puedo ayudarte?", "¡Un placer saludarte!", "¡Hola, espero que tengas un buen día!"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Adiós", "Hasta luego", "Nos vemos", "Chao", "Hasta pronto", "Me despido", "Cuídate", "Nos vemos luego", "Bye", "Que tengas un buen día"],
+      "responses": ["¡Hasta luego!", "Que tengas un buen día", "¡Adiós! Vuelve pronto.", "¡Nos vemos!", "Cuídate, hasta la próxima."],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Gracias", "Muchas gracias", "Te agradezco", "Gracias por tu ayuda", "Muy amable", "Eres genial", "Mil gracias", "Te lo agradezco", "Gracias por todo"],
+      "responses": ["Un placer", "De nada", "Con mucho gusto.", "¡Para eso estoy aquí!", "No hay de qué, siempre dispuesto a ayudar."],
+      "context": [""]
+    },
+    {
+      "tag": "dinero",
+      "patterns": ["¿Cuánto cuesta esto?", "¿Qué precio tiene?", "¿Aceptan tarjetas?", "¿Dónde puedo pagar?", "¿Es caro?", "¿Cuánto debo?", "¿Tienes cambio?", "¿Cuánto es el total?", "¿Puedo pagar con tarjeta?", "¿Aceptan transferencias?"],
+      "responses": ["Los precios varían según el producto.", "Aceptamos efectivo y tarjetas de crédito.", "Puede pagar en la caja.", "Depende de lo que necesites, consúltame.", "Puedes pagar con tarjeta o efectivo, como prefieras."],
+      "context": [""]
+    },
+    {
+      "tag": "emociones",
+      "patterns": ["Estoy feliz", "Me siento triste", "Estoy enojado", "Tengo miedo", "Estoy emocionado", "Estoy cansado", "Estoy estresado", "Me siento ansioso", "Tengo sueño", "Estoy aburrido", "Estoy confundido"],
+      "responses": ["¡Qué bien! La felicidad es contagiosa.", "Lamento oír eso, ¿hay algo en lo que pueda ayudarte?", "Es normal sentirse así, respira profundo.", "Es importante enfrentar los miedos poco a poco.", "¡Eso suena emocionante!", "Descansar puede ayudarte a sentirte mejor.", "Hablar con alguien puede aliviar el estrés.", "La confusión es el inicio de una mayor claridad."],
+      "context": [""]
+    },
+    {
+      "tag": "perfil_bot",
+      "patterns": ["¿Quién eres?", "¿Qué haces?", "¿Cómo te llamas?", "Háblame de ti", "¿Cuál es tu propósito?", "¿Eres un humano?", "¿Qué puedes hacer?", "¿Eres inteligente?", "¿Cómo funcionas?"],
+      "responses": ["Soy un chatbot diseñado para ayudarte con información y preguntas.", "Soy un asistente virtual listo para ayudarte.", "Mi objetivo es hacer tu vida más fácil al responder tus dudas.", "No soy humano, pero puedo conversar contigo."],
+      "context": [""]
+    },
+    {
+      "tag": "educacion_matematicas",
+      "patterns": ["¿Qué es el álgebra?", "Explícame geometría", "¿Qué es el cálculo?", "¿Cómo resolver ecuaciones?", "Dame ejemplos de trigonometría"],
+      "responses": ["El álgebra es una rama de las matemáticas que utiliza símbolos para representar números.", "La geometría estudia las propiedades y relaciones de las figuras en el espacio.", "El cálculo incluye conceptos como derivadas e integrales para estudiar cambios y áreas.", "Para resolver ecuaciones, puedes despejar incógnitas con pasos claros.", "La trigonometría estudia las relaciones entre los ángulos y lados de los triángulos."],
+      "context": [""]
+    },
+    {
+      "tag": "educacion_ciencias",
+      "patterns": ["¿Qué es la física?", "Explícame química", "¿Qué es la biología?", "¿Cómo funciona el cuerpo humano?", "¿Qué son las células?"],
+      "responses": ["La física estudia las propiedades de la materia y la energía.", "La química investiga la composición y transformaciones de las sustancias.", "La biología es el estudio de los seres vivos y su entorno.", "El cuerpo humano funciona gracias a sistemas como el digestivo, nervioso y circulatorio.", "Las células son las unidades básicas de la vida."],
+      "context": [""]
+    },
+    {
+      "tag": "tecnologia_programacion",
+      "patterns": ["¿Qué es Python?", "¿Cómo programar en JavaScript?", "¿Qué es HTML?", "¿Qué es CSS?", "Explícame programación básica"],
+      "responses": ["Python es un lenguaje de programación popular por su facilidad de uso.", "JavaScript es un lenguaje clave para el desarrollo web interactivo.", "HTML es un lenguaje para estructurar contenido en la web.", "CSS se usa para diseñar y estilizar páginas web.", "La programación básica incluye conceptos como variables, ciclos y funciones."],
+      "context": [""]
+    },
+    {
+      "tag": "clima",
+      "patterns": ["¿Cómo está el clima hoy?", "¿Va a llover?", "¿Qué temperatura hace?", "¿Hace frío?", "¿Qué tiempo hará mañana?"],
+      "responses": ["Hoy el clima está soleado con temperaturas moderadas.", "Parece que habrá lluvias más tarde, lleva paraguas.", "La temperatura actual ronda los 25 grados.", "Está fresco, tal vez necesites una chaqueta.", "Mañana el pronóstico indica cielos despejados."],
+      "context": [""]
+    },
+    {
+      "tag": "musica",
+      "patterns": ["Háblame de música", "¿Qué es la música clásica?", "Dime sobre géneros musicales", "¿Quiénes son compositores famosos?", "Recomiéndame canciones"],
+      "responses": ["La música clásica incluye obras de compositores como Beethoven, Mozart y Bach.", "Géneros musicales populares incluyen rock, pop, jazz, blues y electrónica.", "Compositores famosos como Chopin y Vivaldi marcaron la historia de la música.", "Una canción recomendada es 'Bohemian Rhapsody' de Queen."],
+      "context": [""]
+    },
+    {
+      "tag": "finanzas",
+      "patterns": ["¿Cómo hacer un presupuesto?", "Dame consejos para ahorrar dinero", "¿Qué son las inversiones?", "¿Qué es una criptomoneda?", "Dime sobre educación financiera"],
+      "responses": ["Un presupuesto consiste en organizar tus ingresos y gastos para alcanzar metas financieras.", "Ahorra dinero destinando una parte fija de tus ingresos cada mes.", "Las inversiones son formas de hacer crecer tu dinero, como en acciones o bienes raíces.", "Una criptomoneda es una moneda digital que usa tecnología blockchain.", "La educación financiera te enseña a manejar tu dinero de manera efectiva."],
+      "context": [""]
+    },
+    {
+      "tag": "dios",
+      "patterns": ["¿Quién es Dios?", "Háblame de Dios", "¿Qué significa creer en Dios?", "¿Qué opinas sobre Dios?", "¿Qué es la fe en Dios?"],
+      "responses": ["Dios es considerado el creador y ser supremo en muchas religiones.", "Creer en Dios implica tener fe en su existencia y en sus enseñanzas.", "La fe en Dios es una confianza espiritual que guía la vida de muchas personas.", "Dios es percibido de diversas maneras según las creencias de cada religión."],
+      "context": [""]
+    },
+    {
+      "tag": "biblia",
+      "patterns": ["¿Qué es la Biblia?", "Háblame de la Biblia", "¿Qué libros tiene la Biblia?", "¿Qué dice la Biblia sobre el amor?", "¿Cuál es el mensaje principal de la Biblia?"],
+      "responses": ["La Biblia es un conjunto de libros sagrados para el cristianismo.", "Está dividida en el Antiguo y el Nuevo Testamento, con libros como Génesis, Salmos y Mateo.", "La Biblia dice que 'el amor es paciente, el amor es bondadoso'.", "El mensaje principal de la Biblia es el amor, la fe y la salvación a través de Dios."],
+      "context": [""]
+    },
+    {
+      "tag": "finanzas_inversiones",
+      "patterns": ["¿Cómo invertir en la bolsa?", "¿Qué es un fondo mutuo?", "Dame consejos para invertir", "¿Qué es el interés compuesto?", "¿Qué es un portafolio de inversiones?"],
+      "responses": ["Para invertir en la bolsa, investiga empresas y diversifica tus activos.", "Un fondo mutuo es una inversión colectiva gestionada por expertos.", "El interés compuesto permite que tu dinero crezca exponencialmente con el tiempo.", "Un portafolio de inversiones es una colección de activos como acciones, bonos y bienes raíces."],
+      "context": [""]
+    },
+    {
+      "tag": "entretenimiento",
+      "patterns": ["Recomiéndame una película", "Dime algo sobre series", "¿Qué es Marvel?", "Háblame de un libro famoso", "Dime algo de cultura pop"],
+      "responses": ["Una película recomendada es 'El Padrino'.", "Una serie popular es 'Stranger Things'.", "Marvel es una compañía famosa por sus películas de superhéroes como Iron Man y Los Vengadores.", "Un libro clásico es '1984' de George Orwell."],
+      "context": [""]
+    },
+    {
+      "tag": "cultura_general",
+      "patterns": ["Dime algo interesante de historia", "¿Qué sabes de los romanos?", "Háblame de civilizaciones antiguas", "¿Qué es la Revolución Francesa?", "¿Quién fue Albert Einstein?"],
+      "responses": ["Los romanos construyeron acueductos, carreteras y un imperio que influyó en el mundo moderno.", "La Revolución Francesa marcó el fin del absolutismo y promovió los ideales de libertad, igualdad y fraternidad.", "Albert Einstein fue un físico famoso por desarrollar la teoría de la relatividad.", "Civilizaciones antiguas como los egipcios y mayas destacaron por su conocimiento en astronomía y arquitectura."],
+      "context": [""]
+    },
+    {
+      "tag": "cultura_geografia",
+      "patterns": ["Dime un río famoso", "¿Cuál es la montaña más alta del mundo?", "¿Qué sabes del Amazonas?", "¿Cuál es el desierto más grande?", "Háblame de un lugar famoso"],
+      "responses": ["El río Amazonas es uno de los más largos y caudalosos del mundo.", "El Monte Everest es la montaña más alta, con más de 8,800 metros.", "El Sahara, en África, es el desierto más grande del mundo.", "El Gran Cañón, en Estados Unidos, es un famoso destino turístico."],
+      "context": [""]
+    },
+    {
+      "tag": "cultura_gastronomia",
+      "patterns": ["Dime un plato típico", "Háblame de la comida mexicana", "¿Qué es el sushi?", "¿Qué se come en Guatemala?", "¿Qué es la paella?"],
+      "responses": ["El taco es un plato típico de México.", "El sushi es un platillo japonés hecho con arroz y pescado crudo.", "En Guatemala, los platos típicos incluyen el pepián y los tamales.", "La paella es un platillo español a base de arroz y mariscos."],
+      "context": [""]
+    },
+    {
+      "tag": "arte_creatividad",
+      "patterns": ["¿Qué es el Renacimiento?", "Dime sobre arte clásico", "¿Quién pintó La Mona Lisa?", "¿Qué es el impresionismo?", "¿Qué es el arte moderno?"],
+      "responses": ["El Renacimiento fue un periodo cultural que promovió el arte y la ciencia en Europa.", "Leonardo da Vinci pintó 'La Mona Lisa'.", "El impresionismo es un estilo artístico que captura la luz y el movimiento.", "El arte moderno incluye estilos como el cubismo, el surrealismo y el expresionismo."],
+      "context": [""]
+    },
+    {
+      "tag": "tecnologia_innovaciones",
+      "patterns": ["Dime un invento importante", "¿Qué inventó Tesla?", "¿Qué es la inteligencia artificial?", "¿Qué es un robot?", "Háblame de avances tecnológicos"],
+      "responses": ["La electricidad es uno de los inventos más importantes de la humanidad.", "Nikola Tesla contribuyó al desarrollo de la corriente alterna.", "La inteligencia artificial permite a las máquinas realizar tareas que requieren inteligencia humana.", "Un robot es una máquina programada para realizar tareas específicas."],
+      "context": [""]
+    },
+    {
+      "tag": "aprendizaje_infantil",
+      "patterns": ["Dime las letras del abecedario", "Enséñame a contar hasta 20", "Cuéntame un cuento", "¿Qué actividades pueden hacer los niños?", "Dame juegos educativos para niños"],
+      "responses": ["El abecedario en español es: A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z.", "Contemos juntos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20.", "Un cuento clásico es 'Los tres cerditos'. ¿Quieres escucharlo?", "Los niños pueden hacer manualidades, leer cuentos o aprender canciones.", "Prueba juegos como 'Memoria' o aplicaciones interactivas para aprender letras y números."],
+      "context": [""]
+    },
+    {
+      "tag": "noticias_guatemala",
+      "patterns": ["¿Qué noticias hay hoy en Guatemala?", "Dame las últimas noticias", "¿Qué está pasando en Guatemala?", "Noticias de actualidad", "Actualización sobre Guatemala"],
+      "responses": ["Te compartiré las últimas noticias sobre Guatemala. Un momento mientras las consulto."],
+      "context": [""]
+    },
+    {
+      "tag": "viajes",
+      "patterns": ["¿Cómo planificar un viaje?", "Dime qué llevar para un viaje", "¿Qué visitar en Guatemala?", "Recomendaciones de viajes", "Lugares turísticos para visitar"],
+      "responses": ["Para planificar un viaje, organiza tu presupuesto, reserva hospedaje y prepara tu itinerario.", "Lleva ropa adecuada al clima, documentos de identidad y un botiquín básico.", "En Guatemala puedes visitar Tikal, el Lago de Atitlán y Antigua Guatemala.", "Recomiendo destinos históricos, naturales o gastronómicos según tus intereses.", "Explora lugares como playas, montañas o ciudades culturales."],
+      "context": [""]
+    },
+    {
+      "tag": "educacion_literatura",
+      "patterns": ["Dime autores famosos", "¿Qué es un poema?", "¿Qué libros son clásicos?", "Explícame qué es una novela", "¿Qué significa narrativa?"],
+      "responses": ["Algunos autores famosos son Gabriel García Márquez, William Shakespeare y Jane Austen.", "Un poema es una composición literaria que busca expresar sentimientos o ideas.", "Clásicos incluyen 'Don Quijote', 'Cien años de soledad' y 'Orgullo y prejuicio'.", "Una novela es una narración extensa con personajes y una trama desarrollada.", "La narrativa es la forma de contar una historia o un suceso."],
+      "context": [""]
+    },
+    {
+      "tag": "tecnologia_ciberseguridad",
+      "patterns": ["¿Qué es la ciberseguridad?", "¿Cómo proteger mis datos?", "¿Qué es un antivirus?", "Dame consejos de seguridad online", "¿Qué son los ataques phishing?"],
+      "responses": ["La ciberseguridad protege datos y sistemas frente a ataques digitales.", "Protege tus datos usando contraseñas fuertes y autenticación de dos factores.", "Un antivirus detecta y elimina software malicioso.", "Evita hacer clic en enlaces sospechosos y mantén tu software actualizado.", "El phishing son intentos de engaño para robar información personal."],
+      "context": [""]
+    },
+    {
+      "tag": "tecnologia_IA",
+      "patterns": ["¿Qué es la inteligencia artificial?", "¿Cómo funciona el aprendizaje automático?", "¿Qué son redes neuronales?", "Dame ejemplos de IA", "¿Qué aplicaciones tiene la IA?"],
+      "responses": ["La IA permite a las máquinas realizar tareas que normalmente requieren inteligencia humana.", "El aprendizaje automático usa datos para entrenar algoritmos y hacer predicciones.", "Las redes neuronales están inspiradas en el cerebro humano para procesar información.", "Ejemplos de IA incluyen asistentes virtuales, chatbots y recomendaciones de películas.", "La IA se aplica en medicina, finanzas, transporte y muchos más campos."],
+      "context": [""]
+    },
+    {
+      "tag": "salud_nutricion",
+      "patterns": ["¿Qué alimentos son saludables?", "Dame consejos de alimentación", "¿Qué es una dieta equilibrada?", "¿Cómo bajar de peso?", "¿Qué evitar para tener buena salud?"],
+      "responses": ["Frutas, verduras, proteínas magras y granos enteros son saludables.", "Mantén un equilibrio entre carbohidratos, proteínas y grasas.", "Una dieta equilibrada incluye variedad y moderación en las porciones.", "Para bajar de peso, combina alimentación saludable con actividad física.", "Evita alimentos ultraprocesados y en exceso azúcares o grasas saturadas."],
+      "context": [""]
+    },
+    {
+      "tag": "asistencia_tareas",
+      "patterns": ["¿Cómo organizar mi día?", "Dame consejos para el hogar", "¿Cómo redactar una carta formal?", "¿Cómo limpiar la casa?", "¿Qué herramientas necesito para reparaciones sencillas?"],
+      "responses": ["Haz una lista de tareas y prioriza lo más importante.", "Para el hogar, mantén un calendario de limpieza regular.", "Una carta formal incluye saludo, cuerpo, despedida y firma.", "Limpia en secciones: primero polvo, luego suelos, y ventila bien.", "Herramientas básicas incluyen un martillo, destornilladores, cinta métrica y alicates."],
+      "context": [""]
+    },
+    {
+      "tag": "psicologia",
+      "patterns": ["¿Qué es la psicología?", "¿Cómo manejar el estrés?", "Me siento deprimido", "¿Qué hago si tengo ansiedad?", "¿Qué es la felicidad?", "¿Cómo ser más positivo?", "¿Qué hago si me siento solo?", "¿Cómo superar un mal día?"],
+      "responses": ["La psicología es el estudio de la mente y el comportamiento.", "Para manejar el estrés, intenta técnicas de relajación como la meditación o el ejercicio.", "Hablar con alguien de confianza o un profesional puede ayudar.", "Respira profundamente y busca apoyo si lo necesitas.", "La felicidad es un estado de bienestar que puede variar según cada persona.", "Practicar gratitud puede ayudarte a ser más positivo."],
+      "context": [""]
+    },
+    {
+      "tag": "trivia",
+      "patterns": ["Cuéntame un dato curioso", "Dime algo interesante", "¿Sabías que...?", "Cuéntame una trivia", "Sorpréndeme con algo", "Dime algo que no sepa"],
+      "responses": ["¿Sabías que las ballenas azules son los animales más grandes que han existido?", "El corazón de un colibrí puede latir hasta 1,200 veces por minuto.", "La luz del sol tarda 8 minutos en llegar a la Tierra.", "El cerebro humano genera suficientes impulsos eléctricos como para encender una bombilla.", "Los gatos tienen más huesos que los humanos, ¡244!"],
+      "context": [""]
+    },
+    {
+      "tag": "general_conversation",
+      "patterns": ["¿Cómo estás?", "¿Qué haces?", "¿Qué tal?", "¿En qué me puedes ayudar?", "¿Qué sabes hacer?", "¿Cómo va todo?", "¿Qué hay de nuevo?", "¿Qué pasa?", "¿Puedes conversar conmigo?"],
+      "responses": ["Estoy aquí para ayudarte con lo que necesites.", "Puedo responder tus preguntas o simplemente conversar.", "Dime, ¿en qué puedo asistirte?", "¡Aquí listo para cualquier duda!", "Nada nuevo por aquí, ¿y tú?"],
+      "context": [""]
+    },
+    {
+      "tag": "salud",
+      "patterns": ["¿Cómo mantenerse saludable?", "¿Qué debo comer?", "¿Cómo bajar de peso?", "¿Es bueno hacer ejercicio?", "¿Qué alimentos son saludables?", "¿Cuánto debo dormir?", "¿Cómo mejorar mi salud?"],
+      "responses": ["Mantén una dieta equilibrada y haz ejercicio regularmente.", "Beber agua y dormir bien son esenciales para la salud.", "Consulta a un especialista para consejos específicos.", "El ejercicio es bueno para el cuerpo y la mente.", "Comer frutas, verduras y proteínas magras puede ser muy beneficioso."],
+      "context": [""]
+    },
+    {
+      "tag": "educacion",
+      "patterns": ["¿Qué es el aprendizaje?", "¿Por qué es importante la educación?", "¿Qué es la inteligencia?", "¿Cómo aprender algo nuevo?", "¿Qué debo estudiar?", "¿Cómo mejorar mis habilidades?"],
+      "responses": ["El aprendizaje es adquirir nuevos conocimientos o habilidades.", "La educación amplía tus oportunidades y comprensión del mundo.", "La inteligencia es la capacidad de resolver problemas y adaptarse.", "Practicar regularmente y ser curioso son claves para aprender.", "Estudia lo que te apasione y te motive a seguir adelante."],
+      "context": [""]
+    },
+    {
+      "tag": "trivia_historica",
+      "patterns": ["Dime un dato histórico", "¿Qué pasó en la Segunda Guerra Mundial?", "¿Quién descubrió América?", "Cuéntame algo de historia", "¿Qué sabes de los romanos?", "Háblame de civilizaciones antiguas"],
+      "responses": ["Cristóbal Colón llegó a América en 1492.", "La Segunda Guerra Mundial duró de 1939 a 1945.", "Los egipcios construyeron las pirámides hace más de 4,000 años.", "La Revolución Francesa ocurrió en 1789.", "Los romanos construyeron acueductos que todavía existen."],
+      "context": [""]
+    }
+  ]
+}
