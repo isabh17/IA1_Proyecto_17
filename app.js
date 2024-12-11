@@ -53,11 +53,17 @@ async function predictClass(sentence) {
 }
 
 // Obtener una respuesta según la clase
-function getResponse(intentTag) {
-    const intent = intents.intents.find(i => i.tag === intentTag);
+// Contextualizar
+function getResponse(intentTag, currentContext) {
+    let intent;
+    if (currentContext) {
+        intent = intents.intents.find(i => i.tag === intentTag && i.context.includes(currentContext));
+    }
+    if (!intent) {
+        intent = intents.intents.find(i => i.tag === intentTag);
+    }
     return intent ? intent.responses[Math.floor(Math.random() * intent.responses.length)] : "No entiendo lo que dices.";
 }
-
 // Manejar la interacción
 document.getElementById('send').addEventListener('click', async () => {
     const userInput = document.getElementById('user-input').value.trim();
