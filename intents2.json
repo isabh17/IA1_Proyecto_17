@@ -1,0 +1,436 @@
+{
+    "intents": [
+        {
+            "tag": "saludo_general_hola",
+            "patterns": [
+                "Hola"
+            ],
+            "responses": [
+                "¡Hola! ¿En qué puedo ayudarte?"
+            ]
+        },
+        {
+            "tag": "saludo_general_buenos_dias",
+            "patterns": [
+                "Buenos días"
+            ],
+            "responses": [
+                "¡Buenos días! Espero que tengas un excelente día."
+            ]
+        },
+        {
+            "tag": "saludo_general_buenas_tardes",
+            "patterns": [
+                "Buenas tardes"
+            ],
+            "responses": [
+                "¡Hola! ¿Cómo te encuentras hoy?"
+            ]
+        },
+        {
+            "tag": "saludo_general_que_tal",
+            "patterns": [
+                "¿Qué tal?"
+            ],
+            "responses": [
+                "¡Saludos! ¿Qué necesitas hoy?"
+            ]
+        },
+        {
+            "tag": "saludo_general_hola_amigo",
+            "patterns": [
+                "¡Hola amigo!"
+            ],
+            "responses": [
+                "¡Hola! Cuéntame en qué te puedo apoyar."
+            ]
+        },
+        {
+            "tag": "despedida_final_adios",
+            "patterns": [
+                "Adiós"
+            ],
+            "responses": [
+                "¡Adiós! Que tengas un excelente día."
+            ]
+        },
+        {
+            "tag": "despedida_final_hasta_luego",
+            "patterns": [
+                "Hasta luego"
+            ],
+            "responses": [
+                "¡Nos vemos! Vuelve cuando lo necesites."
+            ]
+        },
+        {
+            "tag": "despedida_final_nos_vemos",
+            "patterns": [
+                "Nos vemos"
+            ],
+            "responses": [
+                "Hasta pronto, que te vaya bien."
+            ]
+        },
+        {
+            "tag": "despedida_final_chao",
+            "patterns": [
+                "Chao"
+            ],
+            "responses": [
+                "¡Chao! Espero verte pronto."
+            ]
+        },
+        {
+            "tag": "despedida_final_cuidate",
+            "patterns": [
+                "Cuídate"
+            ],
+            "responses": [
+                "Cuídate, que tengas un gran día."
+            ]
+        },
+        {
+            "tag": "agradecimiento_general_gracias",
+            "patterns": [
+                "Gracias"
+            ],
+            "responses": [
+                "¡De nada! Siempre estoy aquí para ayudarte."
+            ]
+        },
+        {
+            "tag": "agradecimiento_general_muchas_gracias",
+            "patterns": [
+                "Muchas gracias"
+            ],
+            "responses": [
+                "No hay de qué, ¡es un placer!"
+            ]
+        },
+        {
+            "tag": "salud_bienestar_saludable",
+            "patterns": [
+                "¿Qué alimentos son saludables?"
+            ],
+            "responses": [
+                "Alimentos como frutas, verduras y proteínas magras son clave para una dieta saludable."
+            ]
+        },
+        {
+            "tag": "salud_bienestar_ejercicio",
+            "patterns": [
+                "Dame consejos para mantenerme en forma"
+            ],
+            "responses": [
+                "Mantén una rutina de ejercicio, buena hidratación y una dieta equilibrada."
+            ]
+        },
+        {
+            "tag": "salud_bienestar_dormir",
+            "patterns": [
+                "¿Cómo dormir mejor?"
+            ],
+            "responses": [
+                "Evita dispositivos electrónicos antes de dormir y mantén una rutina estable de sueño."
+            ]
+        },
+        {
+            "tag": "amor_consejos_ruptura",
+            "patterns": [
+                "¿Cómo superar una ruptura?"
+            ],
+            "responses": [
+                "Superar una ruptura requiere tiempo, apoyo de amigos y enfocarte en tus metas."
+            ]
+        },
+        {
+            "tag": "amor_consejos_fortalecer",
+            "patterns": [
+                "¿Qué hacer para fortalecer una relación?"
+            ],
+            "responses": [
+                "Fortalecer una relación se basa en la comunicación, la confianza y el respeto."
+            ]
+        },
+        {
+            "tag": "amor_consejos_sentimientos",
+            "patterns": [
+                "¿Cómo puedo expresar mis sentimientos?"
+            ],
+            "responses": [
+                "Expresar tus sentimientos con honestidad y empatía ayuda a que te comprendan mejor."
+            ]
+        },
+        {
+            "tag": "animales_interesantes_tigres",
+            "patterns": [
+                "Dime algo sobre los tigres"
+            ],
+            "responses": [
+                "Los tigres son grandes felinos conocidos por sus rayas únicas y habilidades de caza."
+            ]
+        },
+        {
+            "tag": "animales_interesantes_extincion",
+            "patterns": [
+                "¿Qué animales están en peligro de extinción?"
+            ],
+            "responses": [
+                "El rinoceronte negro y el panda gigante son especies en peligro de extinción."
+            ]
+        },
+        {
+            "tag": "animales_interesantes_domesticos",
+            "patterns": [
+                "¿Qué es un animal doméstico?"
+            ],
+            "responses": [
+                "Un animal doméstico es aquel que vive junto a los humanos y depende de ellos, como perros o gatos."
+            ]
+        },
+        {
+            "tag": "medicina_basica_fiebre",
+            "patterns": [
+                "¿Qué hacer si tengo fiebre?"
+            ],
+            "responses": [
+                "Si tienes fiebre, descansa, mantente hidratado y consulta a un médico si es alta."
+            ]
+        },
+        {
+            "tag": "medicina_basica_resfriado",
+            "patterns": [
+                "¿Cuáles son los síntomas del resfriado?"
+            ],
+            "responses": [
+                "Los síntomas del resfriado incluyen congestión nasal, dolor de garganta y fiebre baja."
+            ]
+        },
+        {
+            "tag": "medicina_basica_quemadura",
+            "patterns": [
+                "¿Cómo tratar una quemadura?"
+            ],
+            "responses": [
+                "Enfría la quemadura con agua corriente y cúbrela con un vendaje limpio."
+            ]
+        },
+        {
+            "tag": "general_greeting_hello",
+            "patterns": [
+                "Hello"
+            ],
+            "responses": [
+                "Hello! How can I help you?"
+            ]
+        },
+        {
+            "tag": "general_greeting_good_morning",
+            "patterns": [
+                "Good morning"
+            ],
+            "responses": [
+                "Good morning! I hope you have an excellent day."
+            ]
+        },
+        {
+            "tag": "general_greeting_good_afternoon",
+            "patterns": [
+                "Good afternoon"
+            ],
+            "responses": [
+                "Hi! How are you today?"
+            ]
+        },
+        {
+            "tag": "general_greeting_how_are_you",
+            "patterns": [
+                "How are you?"
+            ],
+            "responses": [
+                "Greetings! What do you need today?"
+            ]
+        },
+        {
+            "tag": "general_greeting_hello_friend",
+            "patterns": [
+                "Hello friend!"
+            ],
+            "responses": [
+                "Hi! Tell me how I can assist you."
+            ]
+        },
+        {
+            "tag": "farewell_goodbye",
+            "patterns": [
+                "Goodbye"
+            ],
+            "responses": [
+                "Goodbye! Have an excellent day."
+            ]
+        },
+        {
+            "tag": "farewell_see_you_later",
+            "patterns": [
+                "See you later"
+            ],
+            "responses": [
+                "See you! Come back when you need to."
+            ]
+        },
+        {
+            "tag": "farewell_see_you",
+            "patterns": [
+                "See you"
+            ],
+            "responses": [
+                "See you soon, take care."
+            ]
+        },
+        {
+            "tag": "farewell_bye",
+            "patterns": [
+                "Bye"
+            ],
+            "responses": [
+                "Bye! Hope to see you soon."
+            ]
+        },
+        {
+            "tag": "farewell_take_care",
+            "patterns": [
+                "Take care"
+            ],
+            "responses": [
+                "Take care, have a great day."
+            ]
+        },
+        {
+            "tag": "general_thanks_thank_you",
+            "patterns": [
+                "Thank you"
+            ],
+            "responses": [
+                "You're welcome! I'm always here to help."
+            ]
+        },
+        {
+            "tag": "general_thanks_many_thanks",
+            "patterns": [
+                "Many thanks"
+            ],
+            "responses": [
+                "You're welcome, it's a pleasure!"
+            ]
+        },
+        {
+            "tag": "health_wellness_healthy_food",
+            "patterns": [
+                "What foods are healthy?"
+            ],
+            "responses": [
+                "Foods like fruits, vegetables, and lean proteins are key to a healthy diet."
+            ]
+        },
+        {
+            "tag": "health_wellness_exercise",
+            "patterns": [
+                "Give me tips to stay in shape"
+            ],
+            "responses": [
+                "Maintain a routine of exercise, good hydration, and a balanced diet."
+            ]
+        },
+        {
+            "tag": "health_wellness_sleep",
+            "patterns": [
+                "How to sleep better?"
+            ],
+            "responses": [
+                "Avoid electronic devices before sleeping and stick to a stable sleep routine."
+            ]
+        },
+        {
+            "tag": "love_advice_breakup",
+            "patterns": [
+                "How to get over a breakup?"
+            ],
+            "responses": [
+                "Getting over a breakup takes time, support from friends, and focusing on your goals."
+            ]
+        },
+        {
+            "tag": "love_advice_strengthen_relationship",
+            "patterns": [
+                "What to do to strengthen a relationship?"
+            ],
+            "responses": [
+                "Strengthening a relationship is based on communication, trust, and respect."
+            ]
+        },
+        {
+            "tag": "love_advice_expressing_feelings",
+            "patterns": [
+                "How can I express my feelings?"
+            ],
+            "responses": [
+                "Expressing your feelings with honesty and empathy helps others understand you better."
+            ]
+        },
+        {
+            "tag": "animals_interesting_tigers",
+            "patterns": [
+                "Tell me something about tigers"
+            ],
+            "responses": [
+                "Tigers are large cats known for their unique stripes and hunting skills."
+            ]
+        },
+        {
+            "tag": "animals_interesting_endangered",
+            "patterns": [
+                "What animals are endangered?"
+            ],
+            "responses": [
+                "The black rhino and the giant panda are species in danger of extinction."
+            ]
+        },
+        {
+            "tag": "animals_interesting_domestic",
+            "patterns": [
+                "What is a domestic animal?"
+            ],
+            "responses": [
+                "A domestic animal is one that lives with humans and depends on them, like dogs or cats."
+            ]
+        },
+        {
+            "tag": "medicine_basic_fever",
+            "patterns": [
+                "What to do if I have a fever?"
+            ],
+            "responses": [
+                "If you have a fever, rest, stay hydrated, and consult a doctor if it's high."
+            ]
+        },
+        {
+            "tag": "medicine_basic_cold",
+            "patterns": [
+                "What are the symptoms of a cold?"
+            ],
+            "responses": [
+                "Cold symptoms include nasal congestion, sore throat, and low fever."
+            ]
+        },
+        {
+            "tag": "medicine_basic_burn",
+            "patterns": [
+                "How to treat a burn?"
+            ],
+            "responses": [
+                "Cool the burn with running water and cover it with a clean bandage."
+            ]
+        }
+    ]
+}
