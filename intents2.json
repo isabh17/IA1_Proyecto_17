@@ -237,7 +237,7 @@
         {
             "tag": "qué_sabes_el_sahara",
             "patterns": [
-                "¿Qué sabes del Amazonas?"
+                "¿Qué sabes del Sahara?"
             ],
             "responses": [
                 "El Sahara, en África, es el desierto más grande del mundo."
@@ -249,13 +249,13 @@
                 "¿Cuál es el desierto más grande?"
             ],
             "responses": [
-                "El Gran Cañón, en Estados Unidos, es un famoso destino turístico."
+                "El Sahara, en África, es el desierto más grande del mundo."
             ]
         },
         {
             "tag": "dime_un_el_taco",
             "patterns": [
-                "Dime un plato típico"
+                "Dime un plato típico de México"
             ],
             "responses": [
                 "El taco es un plato típico de México."
@@ -264,28 +264,28 @@
         {
             "tag": "háblame_de_el_sushi",
             "patterns": [
-                "Háblame de la comida mexicana"
+                "Háblame de la comida japonesa"
             ],
             "responses": [
                 "El sushi es un platillo japonés hecho con arroz y pescado crudo."
             ]
         },
         {
-            "tag": "qué_es_en_guatemala",
+            "tag": "platillo_tipico_guatemala",
             "patterns": [
-                "¿Qué es el sushi?"
+                "¿Cúal es un platillo típico en Guatemala?"
             ],
             "responses": [
                 "En Guatemala, los platos típicos incluyen el pepián y los tamales."
             ]
         },
         {
-            "tag": "qué_se_la_paella",
+            "tag": "qué_se_come_en_guatemala",
             "patterns": [
                 "¿Qué se come en Guatemala?"
             ],
             "responses": [
-                "La paella es un platillo español a base de arroz y mariscos."
+                "En Guatemala, se comen platos típicos como el pepián, los tamales y los chuchitos."
             ]
         },
         {
@@ -312,7 +312,7 @@
                 "¿Quién pintó La Mona Lisa?"
             ],
             "responses": [
-                "El impresionismo es un estilo artístico que captura la luz y el movimiento."
+                "La Mona Lisa fue pintada por Leonardo da Vinci."
             ]
         },
         {
@@ -505,7 +505,7 @@
             ]
         },
         {
-            "tag": "qué_pasó_la_segunda",
+            "tag": "historia_segunda_guerra_mundial",
             "patterns": [
                 "¿Qué pasó en la Segunda Guerra Mundial?"
             ],
@@ -532,7 +532,7 @@
             ]
         },
         {
-            "tag": "qué_sabes_los_romanos",
+            "tag": "historia_romanos",
             "patterns": [
                 "¿Qué sabes de los romanos?"
             ],
@@ -696,51 +696,95 @@
                 "¿En qué temas me puedes ayudar?",
                 "¿Qué temas conoces?",
                 "¿De qué puedes hablar?",
-                "¿Sobre qué puedes responder?"
+                "¿Sobre qué puedes responder?",
+                "¿Qué temas cubres?",
+                "¿En qué me puedes ayudar a aprender?",
+                "¿Qué áreas puedes asistir?"
             ],
             "responses": [
-                "Puedo ayudarte en varios temas, incluyendo:\n\n",
-                "- Saludos y despedidas.\n",
-                "- Agradecimientos.\n",
-                "- Salud y bienestar.\n",
-                "- Consejos sobre amor.\n",
-                "- Animales.\n",
-                "- Medicina básica.\n",
-                "- Geografía.\n",
-                "- Comida.\n",
-                "- Historia.\n",
-                "- Arte.\n",
-                "- Inventos y tecnología.\n",
-                "- Viajes.\n",
-                "- Literatura.\n",
-                "- Ciencia y datos curiosos.\n",
-                "- Educación básica.\n",
-                "- Astronomía.\n",
-                "- Naturaleza y geografía.\n",
-                "- Química básica.\n\n",
-                "¡Pregunta sobre cualquier tema y estaré encantado de ayudarte!"
+                "Puedo ayudarte en varios temas, incluyendo:\n\n- Saludos y despedidas.\n- Expresiones de gratitud.\n- Salud y bienestar.\n- Consejos sobre el amor.\n- Animales.\n- Medicina básica.\n- Geografía.\n- Comida.\n- Historia.\n- Arte.\n- Inventos y tecnología.\n- Viajes.\n- Literatura.\n- Ciencia y datos curiosos.\n- Educación básica.\n- Astronomía.\n- Naturaleza y geografía.\n- Química básica.\n\n¡Pregunta sobre cualquier tema y estaré encantado de ayudarte!"
             ]
         },
         {
-            "tag": "perfil_bot",
+            "tag": "quien_eres",
             "patterns": [
-                "¿Quién eres?", 
-                "¿Qué haces?", 
-                "¿Cómo te llamas?", 
-                "Háblame de ti", 
-                "¿Cuál es tu propósito?", 
-                "¿Eres un humano?", 
-                "¿Qué puedes hacer?", 
-                "¿Eres inteligente?", 
+                "¿Quién eres?"
+            ],
+            "responses": [
+                "Soy Chatty, un chatbot diseñado para ayudarte con información y preguntas."
+            ]
+        },
+        {
+            "tag": "que_haces",
+            "patterns": [
+                "¿Qué haces?"
+            ],
+            "responses": [
+                "Soy Chatty, un asistente virtual listo para ayudarte."
+            ]
+        },
+        {
+            "tag": "como_te_llamas",
+            "patterns": [
+                "¿Cómo te llamas?"
+            ],
+            "responses": [
+                "Me llamo Chatty y mi objetivo es hacer tu vida más fácil al responder tus dudas."
+            ]
+        },
+        {
+            "tag": "hablame_de_ti",
+            "patterns": [
+                "Háblame de ti"
+            ],
+            "responses": [
+                "Soy Chatty, un asistente virtual listo para ayudarte."
+            ]
+        },
+        {
+            "tag": "cual_es_tu_proposito",
+            "patterns": [
+                "¿Cuál es tu propósito?"
+            ],
+            "responses": [
+                "Mi objetivo es hacer tu vida más fácil al responder tus dudas."
+            ]
+        },
+        {
+            "tag": "eres_humano",
+            "patterns": [
+                "¿Eres un humano?"
+            ],
+            "responses": [
+                "No soy humano, soy Chatty, pero puedo conversar contigo."
+            ]
+        },
+        {
+            "tag": "que_puedes_hacer",
+            "patterns": [
+                "¿Qué puedes hacer?"
+            ],
+            "responses": [
+                "Soy Chatty, un asistente virtual listo para ayudarte."
+            ]
+        },
+        {
+            "tag": "eres_inteligente",
+            "patterns": [
+                "¿Eres inteligente?"
+            ],
+            "responses": [
+                "Soy Chatty, un chatbot diseñado para ayudarte con información y preguntas."
+            ]
+        },
+        {
+            "tag": "como_funcionas",
+            "patterns": [
                 "¿Cómo funcionas?"
             ],
             "responses": [
-                "Soy un chatbot diseñado para ayudarte con información y preguntas.", 
-                "Soy un asistente virtual listo para ayudarte.", 
-                "Mi objetivo es hacer tu vida más fácil al responder tus dudas.", 
-                "No soy humano, pero puedo conversar contigo."
-            ],
-            "context": [""]
+                "Mi objetivo es hacer tu vida más fácil al responder tus dudas."
+            ]
         },
         {
             "tag": "general_greeting_hello",
@@ -979,10 +1023,11 @@
         {
             "tag": "what_do_you_know_the_sahara",
             "patterns": [
-                "What do you know about the Amazon?"
+                "What do you know about the Sahara?",
+                "Tell me about the Sahara."
             ],
             "responses": [
-                "The Sahara in Africa is the largest desert in the world."
+                "The Sahara, located in Africa, is the largest desert in the world."
             ]
         },
         {
@@ -991,7 +1036,7 @@
                 "What is the largest desert?"
             ],
             "responses": [
-                "The Grand Canyon in the United States is a famous tourist destination."
+                "The Sahara in Africa is the largest desert in the world."
             ]
         },
         {
@@ -1006,19 +1051,20 @@
         {
             "tag": "tell_me_about_sushi",
             "patterns": [
-                "Tell me about Mexican food"
+                "Tell me about Japanese food",
+                "What is sushi?"
             ],
             "responses": [
-                "Sushi is a Japanese dish made with rice and raw fish."
+                "Sushi is a Japanese dish made with rice, raw fish, and other ingredients."
             ]
         },
         {
-            "tag": "what_is_in_guatemala",
+            "tag": "platillo_tipico_japon",
             "patterns": [
                 "What is sushi?"
             ],
             "responses": [
-                "In Guatemala, typical dishes include pepián and tamales."
+                "Sushi is a Japanese dish made with seasoned rice and raw fish or seafood."
             ]
         },
         {
@@ -1027,7 +1073,7 @@
                 "What do you eat in Guatemala?"
             ],
             "responses": [
-                "Paella is a Spanish dish made with rice and seafood."
+                "In Guatemala, typical dishes include pepián and tamales."
             ]
         },
         {
@@ -1054,16 +1100,17 @@
                 "Who painted the Mona Lisa?"
             ],
             "responses": [
-                "Impressionism is an artistic style that captures light and movement."
+                "The Mona Lisa was painted by Leonardo da Vinci."
             ]
         },
         {
             "tag": "what_is_art",
             "patterns": [
-                "What is Impressionism?"
+                "What is Impressionism?",
+                "Tell me about Impressionist art."
             ],
             "responses": [
-                "Modern art includes styles like Cubism, Surrealism, and Expressionism."
+                "Impressionism is an art movement characterized by small, thin brush strokes and an emphasis on light and its changing qualities."
             ]
         },
         {
@@ -1258,10 +1305,11 @@
         {
             "tag": "who_discovered_the_egyptians",
             "patterns": [
-                "Who discovered America?"
+                "Who built the pyramids?",
+                "Who were the Egyptians?"
             ],
             "responses": [
-                "The Egyptians built pyramids over 4,000 years ago."
+                "The Egyptians built the pyramids over 4,000 years ago."
             ]
         },
         {
@@ -1444,48 +1492,89 @@
                 "What areas can you assist with?"
             ],
             "responses": [
-                "I can help you with several topics, including:\n\n",
-                "- Greetings and farewells.\n" ,
-                "- Gratitude expressions.\n" ,
-                "- Health and wellness.\n" ,
-                "- Love advice.\n",
-                "- Animals.\n",
-                "- Basic medicine.\n",
-                "- Geography.\n",
-                "- Food.\n",
-                "- History.\n",
-                "- Art.\n",
-                "- Inventions and technology.\n",
-                "- Travel.\n",
-                "- Literature.\n",
-                "- Science and fun facts.\n",
-                "- Basic education.\n",
-                "- Astronomy.\n",
-                "- Nature and geography.\n",
-                "- Basic chemistry.\n\n",
-                "Ask about any topic, and I'll be happy to help!"
+                "I can help you with several topics, including:\n\n- Greetings and farewells.\n- Gratitude expressions.\n- Health and wellness.\n- Love advice.\n- Animals.\n- Basic medicine.\n- Geography.\n- Food.\n- History.\n- Art.\n- Inventions and technology.\n- Travel.\n- Literature.\n- Science and fun facts.\n- Basic education.\n- Astronomy.\n- Nature and geography.\n- Basic chemistry.\n\nAsk about any topic, and I'll be happy to help!"
             ]
         },
         {
-            "tag": "bot_profile",
+            "tag": "who_are_you",
             "patterns": [
-                "Who are you?", 
-                "What do you do?", 
-                "What's your name?", 
-                "Tell me about yourself", 
-                "What is your purpose?", 
-                "Are you human?", 
-                "What can you do?", 
-                "Are you intelligent?", 
+                "Who are you?"
+            ],
+            "responses": [
+                "I am Chatty, a chatbot designed to help you with information and questions."
+            ]
+        },
+        {
+            "tag": "what_do_you_do",
+            "patterns": [
+                "What do you do?"
+            ],
+            "responses": [
+                "I am Chatty, a virtual assistant ready to help you."
+            ]
+        },
+        {
+            "tag": "what_is_your_name",
+            "patterns": [
+                "What is your name?"
+            ],
+            "responses": [
+                "My name is Chatty, and my goal is to make your life easier by answering your questions."
+            ]
+        },
+        {
+            "tag": "tell_me_about_you",
+            "patterns": [
+                "Tell me about yourself"
+            ],
+            "responses": [
+                "I am Chatty, a virtual assistant ready to help you."
+            ]
+        },
+        {
+            "tag": "what_is_your_purpose",
+            "patterns": [
+                "What is your purpose?"
+            ],
+            "responses": [
+                "My goal is to make your life easier by answering your questions."
+            ]
+        },
+        {
+            "tag": "are_you_human",
+            "patterns": [
+                "Are you human?"
+            ],
+            "responses": [
+                "I am not human, I am Chatty, but I can chat with you."
+            ]
+        },
+        {
+            "tag": "what_can_you_do",
+            "patterns": [
+                "What can you do?"
+            ],
+            "responses": [
+                "I am Chatty, a virtual assistant ready to help you."
+            ]
+        },
+        {
+            "tag": "are_you_smart",
+            "patterns": [
+                "Are you smart?"
+            ],
+            "responses": [
+                "I am Chatty, a chatbot designed to help you with information and questions."
+            ]
+        },
+        {
+            "tag": "how_do_you_work",
+            "patterns": [
                 "How do you work?"
             ],
             "responses": [
-                "I am a chatbot designed to help you with information and questions.", 
-                "I am a virtual assistant ready to assist you.", 
-                "My goal is to make your life easier by answering your questions.", 
-                "I am not human, but I can have a conversation with you."
-            ],
-            "context": [""]
-        }             
+                "My goal is to make your life easier by answering your questions."
+            ]
+        }
     ]
 }
