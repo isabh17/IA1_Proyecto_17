@@ -217,6 +217,532 @@
             ]
         },
         {
+            "tag": "dime_un_el_río",
+            "patterns": [
+                "Dime un río famoso"
+            ],
+            "responses": [
+                "El río Amazonas es uno de los más largos y caudalosos del mundo."
+            ]
+        },
+        {
+            "tag": "cuál_es_el_monte",
+            "patterns": [
+                "¿Cuál es la montaña más alta del mundo?"
+            ],
+            "responses": [
+                "El Monte Everest es la montaña más alta, con más de 8,800 metros."
+            ]
+        },
+        {
+            "tag": "qué_sabes_el_sahara",
+            "patterns": [
+                "¿Qué sabes del Amazonas?"
+            ],
+            "responses": [
+                "El Sahara, en África, es el desierto más grande del mundo."
+            ]
+        },
+        {
+            "tag": "cuál_es_el_gran",
+            "patterns": [
+                "¿Cuál es el desierto más grande?"
+            ],
+            "responses": [
+                "El Gran Cañón, en Estados Unidos, es un famoso destino turístico."
+            ]
+        },
+        {
+            "tag": "dime_un_el_taco",
+            "patterns": [
+                "Dime un plato típico"
+            ],
+            "responses": [
+                "El taco es un plato típico de México."
+            ]
+        },
+        {
+            "tag": "háblame_de_el_sushi",
+            "patterns": [
+                "Háblame de la comida mexicana"
+            ],
+            "responses": [
+                "El sushi es un platillo japonés hecho con arroz y pescado crudo."
+            ]
+        },
+        {
+            "tag": "qué_es_en_guatemala",
+            "patterns": [
+                "¿Qué es el sushi?"
+            ],
+            "responses": [
+                "En Guatemala, los platos típicos incluyen el pepián y los tamales."
+            ]
+        },
+        {
+            "tag": "qué_se_la_paella",
+            "patterns": [
+                "¿Qué se come en Guatemala?"
+            ],
+            "responses": [
+                "La paella es un platillo español a base de arroz y mariscos."
+            ]
+        },
+        {
+            "tag": "qué_es_el_renacimiento",
+            "patterns": [
+                "¿Qué es el Renacimiento?"
+            ],
+            "responses": [
+                "El Renacimiento fue un periodo cultural que promovió el arte y la ciencia en Europa."
+            ]
+        },
+        {
+            "tag": "dime_sobre_leonardo_da",
+            "patterns": [
+                "Dime sobre arte clásico"
+            ],
+            "responses": [
+                "Leonardo da Vinci pintó 'La Mona Lisa'."
+            ]
+        },
+        {
+            "tag": "quién_pintó_el_impresionismo",
+            "patterns": [
+                "¿Quién pintó La Mona Lisa?"
+            ],
+            "responses": [
+                "El impresionismo es un estilo artístico que captura la luz y el movimiento."
+            ]
+        },
+        {
+            "tag": "qué_es_el_arte",
+            "patterns": [
+                "¿Qué es el impresionismo?"
+            ],
+            "responses": [
+                "El arte moderno incluye estilos como el cubismo, el surrealismo y el expresionismo."
+            ]
+        },
+        {
+            "tag": "dime_un_la_electricidad",
+            "patterns": [
+                "Dime un invento importante"
+            ],
+            "responses": [
+                "La electricidad es uno de los inventos más importantes de la humanidad."
+            ]
+        },
+        {
+            "tag": "qué_inventó_nikola_tesla",
+            "patterns": [
+                "¿Qué inventó Tesla?"
+            ],
+            "responses": [
+                "Nikola Tesla contribuyó al desarrollo de la corriente alterna."
+            ]
+        },
+        {
+            "tag": "qué_es_la_inteligencia",
+            "patterns": [
+                "¿Qué es la inteligencia artificial?"
+            ],
+            "responses": [
+                "La inteligencia artificial permite a las máquinas realizar tareas que requieren inteligencia humana."
+            ]
+        },
+        {
+            "tag": "qué_es_un_robot",
+            "patterns": [
+                "¿Qué es un robot?"
+            ],
+            "responses": [
+                "Un robot es una máquina programada para realizar tareas específicas."
+            ]
+        },
+        {
+            "tag": "cómo_planificar_para_planificar",
+            "patterns": [
+                "¿Cómo planificar un viaje?"
+            ],
+            "responses": [
+                "Para planificar un viaje, organiza tu presupuesto, reserva hospedaje y prepara tu itinerario."
+            ]
+        },
+        {
+            "tag": "dime_qué_lleva_ropa",
+            "patterns": [
+                "Dime qué llevar para un viaje"
+            ],
+            "responses": [
+                "Lleva ropa adecuada al clima, documentos de identidad y un botiquín básico."
+            ]
+        },
+        {
+            "tag": "qué_visitar_en_guatemala",
+            "patterns": [
+                "¿Qué visitar en Guatemala?"
+            ],
+            "responses": [
+                "En Guatemala puedes visitar Tikal, el Lago de Atitlán y Antigua Guatemala."
+            ]
+        },
+        {
+            "tag": "recomendaciones_de_recomiendo_destinos",
+            "patterns": [
+                "Recomendaciones de viajes"
+            ],
+            "responses": [
+                "Recomiendo destinos históricos, naturales o gastronómicos según tus intereses."
+            ]
+        },
+        {
+            "tag": "lugares_turísticos_explora_lugares",
+            "patterns": [
+                "Lugares turísticos para visitar"
+            ],
+            "responses": [
+                "Explora lugares como playas, montañas o ciudades culturales."
+            ]
+        },
+        {
+            "tag": "dime_autores_algunos_autores",
+            "patterns": [
+                "Dime autores famosos"
+            ],
+            "responses": [
+                "Algunos autores famosos son Gabriel García Márquez, William Shakespeare y Jane Austen."
+            ]
+        },
+        {
+            "tag": "qué_es_un_poema",
+            "patterns": [
+                "¿Qué es un poema?"
+            ],
+            "responses": [
+                "Un poema es una composición literaria que busca expresar sentimientos o ideas."
+            ]
+        },
+        {
+            "tag": "qué_libros_clásicos_incluyen",
+            "patterns": [
+                "¿Qué libros son clásicos?"
+            ],
+            "responses": [
+                "Clásicos incluyen 'Don Quijote', 'Cien años de soledad' y 'Orgullo y prejuicio'."
+            ]
+        },
+        {
+            "tag": "explícame_qué_una_novela",
+            "patterns": [
+                "Explícame qué es una novela"
+            ],
+            "responses": [
+                "Una novela es una narración extensa con personajes y una trama desarrollada."
+            ]
+        },
+        {
+            "tag": "qué_significa_la_narrativa",
+            "patterns": [
+                "¿Qué significa narrativa?"
+            ],
+            "responses": [
+                "La narrativa es la forma de contar una historia o un suceso."
+            ]
+        },
+        {
+            "tag": "cuéntame_un_sabías_que",
+            "patterns": [
+                "Cuéntame un dato curioso"
+            ],
+            "responses": [
+                "¿Sabías que las ballenas azules son los animales más grandes que han existido?"
+            ]
+        },
+        {
+            "tag": "dime_algo_el_corazón",
+            "patterns": [
+                "Dime algo interesante"
+            ],
+            "responses": [
+                "El corazón de un colibrí puede latir hasta 1,200 veces por minuto."
+            ]
+        },
+        {
+            "tag": "sabías_que..._la_luz",
+            "patterns": [
+                "¿Sabías que...?"
+            ],
+            "responses": [
+                "La luz del sol tarda 8 minutos en llegar a la Tierra."
+            ]
+        },
+        {
+            "tag": "cuéntame_una_el_cerebro",
+            "patterns": [
+                "Cuéntame una trivia"
+            ],
+            "responses": [
+                "El cerebro humano genera suficientes impulsos eléctricos como para encender una bombilla."
+            ]
+        },
+        {
+            "tag": "sorpréndeme_con_los_gatos",
+            "patterns": [
+                "Sorpréndeme con algo"
+            ],
+            "responses": [
+                "Los gatos tienen más huesos que los humanos, ¡244!"
+            ]
+        },
+        {
+            "tag": "dime_un_cristóbal_colón",
+            "patterns": [
+                "Dime un dato histórico"
+            ],
+            "responses": [
+                "Cristóbal Colón llegó a América en 1492."
+            ]
+        },
+        {
+            "tag": "qué_pasó_la_segunda",
+            "patterns": [
+                "¿Qué pasó en la Segunda Guerra Mundial?"
+            ],
+            "responses": [
+                "La Segunda Guerra Mundial duró de 1939 a 1945."
+            ]
+        },
+        {
+            "tag": "quién_descubrió_los_egipcios",
+            "patterns": [
+                "¿Quién descubrió América?"
+            ],
+            "responses": [
+                "Los egipcios construyeron las pirámides hace más de 4,000 años."
+            ]
+        },
+        {
+            "tag": "cuéntame_algo_la_revolución",
+            "patterns": [
+                "Cuéntame algo de historia"
+            ],
+            "responses": [
+                "La Revolución Francesa ocurrió en 1789."
+            ]
+        },
+        {
+            "tag": "qué_sabes_los_romanos",
+            "patterns": [
+                "¿Qué sabes de los romanos?"
+            ],
+            "responses": [
+                "Los romanos construyeron acueductos que todavía existen."
+            ]
+        },
+        {
+            "tag": "dime_el_abecedario",
+            "patterns": [
+                "Dime el abecedario",
+                "¿Cuál es el abecedario?"
+            ],
+            "responses": [
+                "El abecedario en español es: A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z."
+            ]
+        },
+        {
+            "tag": "dime_los_numeros_1_10",
+            "patterns": [
+                "Dime los números del 1 al 10",
+                "¿Cuáles son los números del 1 al 10?"
+            ],
+            "responses": [
+                "Los números del 1 al 10 son: uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez."
+            ]
+        },
+        {
+            "tag": "dime_los_numeros_1_20",
+            "patterns": [
+                "Dime los números del 1 al 20",
+                "¿Cuáles son los números del 1 al 20?"
+            ],
+            "responses": [
+                "Los números del 1 al 20 son: uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, quince, dieciséis, diecisiete, dieciocho, diecinueve, veinte."
+            ]
+        },
+        {
+            "tag": "dias_de_la_semana",
+            "patterns": [
+                "¿Cuáles son los días de la semana?",
+                "Dime los días de la semana"
+            ],
+            "responses": [
+                "Los días de la semana son: lunes, martes, miércoles, jueves, viernes, sábado y domingo."
+            ]
+        },
+        {
+            "tag": "meses_del_ano",
+            "patterns": [
+                "¿Cuáles son los meses del año?",
+                "Dime los meses del año"
+            ],
+            "responses": [
+                "Los meses del año son: enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre y diciembre."
+            ]
+        },
+        {
+            "tag": "colores_basicos",
+            "patterns": [
+                "Dime los colores básicos",
+                "¿Cuáles son los colores básicos?"
+            ],
+            "responses": [
+                "Los colores básicos son: rojo, azul, amarillo, verde, naranja, morado, blanco y negro."
+            ]
+        },
+        {
+            "tag": "formas_geometricas",
+            "patterns": [
+                "Dime algunas formas geométricas",
+                "¿Cuáles son las formas geométricas?"
+            ],
+            "responses": [
+                "Algunas formas geométricas son: círculo, cuadrado, triángulo, rectángulo y pentágono."
+            ]
+        },
+        {
+            "tag": "saludos_basicos",
+            "patterns": [
+                "Dime un saludo básico",
+                "¿Cómo puedo saludar?"
+            ],
+            "responses": [
+                "Hola, ¿cómo estás?"
+            ]
+        },
+        {
+            "tag": "despedidas_basicas",
+            "patterns": [
+                "Dime cómo despedirme",
+                "¿Cómo me puedo despedir?"
+            ],
+            "responses": [
+                "Puedes decir: adiós, hasta luego, o nos vemos."
+            ]
+        },
+        {
+            "tag": "frase_en_ingles",
+            "patterns": [
+                "Dime una frase básica en inglés",
+                "¿Cómo se dice algo básico en inglés?"
+            ],
+            "responses": [
+                "Una frase básica en inglés es: 'Hello, how are you?' que significa 'Hola, ¿cómo estás?'."
+            ]
+        },
+        {
+            "tag": "planetas_del_sistema_solar",
+            "patterns": [
+                "Dime los planetas del sistema solar",
+                "¿Cuáles son los planetas del sistema solar?"
+            ],
+            "responses": [
+                "Los planetas del sistema solar son: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno."
+            ]
+        },
+        {
+            "tag": "dime_animales_marinos",
+            "patterns": [
+                "Dime algunos animales marinos",
+                "¿Cuáles son los animales marinos?"
+            ],
+            "responses": [
+                "Algunos animales marinos son: delfines, tiburones, ballenas, pulpos y estrellas de mar."
+            ]
+        },
+        {
+            "tag": "continentes_del_mundo",
+            "patterns": [
+                "Dime los continentes del mundo",
+                "¿Cuáles son los continentes del mundo?"
+            ],
+            "responses": [
+                "Los continentes del mundo son: África, América, Asia, Europa, Oceanía y la Antártida."
+            ]
+        },
+        {
+            "tag": "elementos_quimicos_basicos",
+            "patterns": [
+                "Dime algunos elementos químicos",
+                "¿Cuáles son los elementos químicos básicos?"
+            ],
+            "responses": [
+                "Algunos elementos químicos básicos son: hidrógeno, oxígeno, carbono, nitrógeno y helio."
+            ]
+        },
+        {
+            "tag": "estaciones_del_ano",
+            "patterns": [
+                "Dime las estaciones del año",
+                "¿Cuáles son las estaciones del año?"
+            ],
+            "responses": [
+                "Las estaciones del año son: primavera, verano, otoño e invierno."
+            ]
+        },
+        {
+            "tag": "temas_disponibles",
+            "patterns": [
+                "¿En qué temas me puedes ayudar?",
+                "¿Qué temas conoces?",
+                "¿De qué puedes hablar?",
+                "¿Sobre qué puedes responder?"
+            ],
+            "responses": [
+                "Puedo ayudarte en varios temas, incluyendo:\n\n",
+                "- Saludos y despedidas.\n",
+                "- Agradecimientos.\n",
+                "- Salud y bienestar.\n",
+                "- Consejos sobre amor.\n",
+                "- Animales.\n",
+                "- Medicina básica.\n",
+                "- Geografía.\n",
+                "- Comida.\n",
+                "- Historia.\n",
+                "- Arte.\n",
+                "- Inventos y tecnología.\n",
+                "- Viajes.\n",
+                "- Literatura.\n",
+                "- Ciencia y datos curiosos.\n",
+                "- Educación básica.\n",
+                "- Astronomía.\n",
+                "- Naturaleza y geografía.\n",
+                "- Química básica.\n\n",
+                "¡Pregunta sobre cualquier tema y estaré encantado de ayudarte!"
+            ]
+        },
+        {
+            "tag": "perfil_bot",
+            "patterns": [
+                "¿Quién eres?", 
+                "¿Qué haces?", 
+                "¿Cómo te llamas?", 
+                "Háblame de ti", 
+                "¿Cuál es tu propósito?", 
+                "¿Eres un humano?", 
+                "¿Qué puedes hacer?", 
+                "¿Eres inteligente?", 
+                "¿Cómo funcionas?"
+            ],
+            "responses": [
+                "Soy un chatbot diseñado para ayudarte con información y preguntas.", 
+                "Soy un asistente virtual listo para ayudarte.", 
+                "Mi objetivo es hacer tu vida más fácil al responder tus dudas.", 
+                "No soy humano, pero puedo conversar contigo."
+            ],
+            "context": [""]
+        },
+        {
             "tag": "general_greeting_hello",
             "patterns": [
                 "Hello"
@@ -431,6 +957,535 @@
             "responses": [
                 "Cool the burn with running water and cover it with a clean bandage."
             ]
-        }
+        },
+        {
+            "tag": "tell_me_a_river",
+            "patterns": [
+                "Tell me a famous river"
+            ],
+            "responses": [
+                "The Amazon River is one of the longest and most voluminous rivers in the world."
+            ]
+        },
+        {
+            "tag": "what_is_the_mountain",
+            "patterns": [
+                "What is the highest mountain in the world?"
+            ],
+            "responses": [
+                "Mount Everest is the highest mountain, with over 8,800 meters."
+            ]
+        },
+        {
+            "tag": "what_do_you_know_the_sahara",
+            "patterns": [
+                "What do you know about the Amazon?"
+            ],
+            "responses": [
+                "The Sahara in Africa is the largest desert in the world."
+            ]
+        },
+        {
+            "tag": "what_is_the_great",
+            "patterns": [
+                "What is the largest desert?"
+            ],
+            "responses": [
+                "The Grand Canyon in the United States is a famous tourist destination."
+            ]
+        },
+        {
+            "tag": "tell_me_a_taco",
+            "patterns": [
+                "Tell me a typical dish"
+            ],
+            "responses": [
+                "Tacos are a traditional dish from Mexico."
+            ]
+        },
+        {
+            "tag": "tell_me_about_sushi",
+            "patterns": [
+                "Tell me about Mexican food"
+            ],
+            "responses": [
+                "Sushi is a Japanese dish made with rice and raw fish."
+            ]
+        },
+        {
+            "tag": "what_is_in_guatemala",
+            "patterns": [
+                "What is sushi?"
+            ],
+            "responses": [
+                "In Guatemala, typical dishes include pepián and tamales."
+            ]
+        },
+        {
+            "tag": "what_do_you_eat_in_guatemala",
+            "patterns": [
+                "What do you eat in Guatemala?"
+            ],
+            "responses": [
+                "Paella is a Spanish dish made with rice and seafood."
+            ]
+        },
+        {
+            "tag": "what_is_the_renaissance",
+            "patterns": [
+                "What is the Renaissance?"
+            ],
+            "responses": [
+                "The Renaissance was a cultural period that promoted art and science in Europe."
+            ]
+        },
+        {
+            "tag": "tell_me_about_leonardo_da",
+            "patterns": [
+                "Tell me about classical art"
+            ],
+            "responses": [
+                "Leonardo da Vinci painted 'The Mona Lisa'."
+            ]
+        },
+        {
+            "tag": "who_painted_impressionism",
+            "patterns": [
+                "Who painted the Mona Lisa?"
+            ],
+            "responses": [
+                "Impressionism is an artistic style that captures light and movement."
+            ]
+        },
+        {
+            "tag": "what_is_art",
+            "patterns": [
+                "What is Impressionism?"
+            ],
+            "responses": [
+                "Modern art includes styles like Cubism, Surrealism, and Expressionism."
+            ]
+        },
+        {
+            "tag": "tell_me_about_electricity",
+            "patterns": [
+                "Tell me an important invention"
+            ],
+            "responses": [
+                "Electricity is one of the most important inventions of humanity."
+            ]
+        },
+        {
+            "tag": "what_did_nikola_tesla_invent",
+            "patterns": [
+                "What did Tesla invent?"
+            ],
+            "responses": [
+                "Nikola Tesla contributed to the development of alternating current."
+            ]
+        },
+        {
+            "tag": "what_is_ai",
+            "patterns": [
+                "What is artificial intelligence?"
+            ],
+            "responses": [
+                "Artificial intelligence allows machines to perform tasks that require human intelligence."
+            ]
+        },
+        {
+            "tag": "what_is_a_robot",
+            "patterns": [
+                "What is a robot?"
+            ],
+            "responses": [
+                "A robot is a machine programmed to perform specific tasks."
+            ]
+        },
+        {
+            "tag": "how_to_plan_a_trip",
+            "patterns": [
+                "How to plan a trip?"
+            ],
+            "responses": [
+                "To plan a trip, organize your budget, book accommodation, and prepare your itinerary."
+            ]
+        },
+        {
+            "tag": "tell_me_what_to_pack",
+            "patterns": [
+                "Tell me what to pack for a trip"
+            ],
+            "responses": [
+                "Pack clothing suitable for the weather, identification documents, and a basic first-aid kit."
+            ]
+        },
+        {
+            "tag": "what_to_visit_in_guatemala",
+            "patterns": [
+                "What to visit in Guatemala?"
+            ],
+            "responses": [
+                "In Guatemala, you can visit Tikal, Lake Atitlán, and Antigua Guatemala."
+            ]
+        },
+        {
+            "tag": "travel_recommendations",
+            "patterns": [
+                "Travel recommendations"
+            ],
+            "responses": [
+                "I recommend historical, natural, or gastronomic destinations based on your interests."
+            ]
+        },
+        {
+            "tag": "tourist_places",
+            "patterns": [
+                "Tourist places to visit"
+            ],
+            "responses": [
+                "Explore places like beaches, mountains, or cultural cities."
+            ]
+        },
+        {
+            "tag": "tell_me_authors",
+            "patterns": [
+                "Tell me famous authors"
+            ],
+            "responses": [
+                "Some famous authors are Gabriel García Márquez, William Shakespeare, and Jane Austen."
+            ]
+        },
+        {
+            "tag": "what_is_a_poem",
+            "patterns": [
+                "What is a poem?"
+            ],
+            "responses": [
+                "A poem is a literary composition that seeks to express feelings or ideas."
+            ]
+        },
+        {
+            "tag": "what_are_classics",
+            "patterns": [
+                "What books are classics?"
+            ],
+            "responses": [
+                "Classics include 'Don Quixote,' 'One Hundred Years of Solitude,' and 'Pride and Prejudice.'"
+            ]
+        },
+        {
+            "tag": "explain_what_a_novel_is",
+            "patterns": [
+                "Explain what a novel is"
+            ],
+            "responses": [
+                "A novel is an extensive narrative with developed characters and a plot."
+            ]
+        },
+        {
+            "tag": "what_is_narrative",
+            "patterns": [
+                "What does narrative mean?"
+            ],
+            "responses": [
+                "Narrative is the way of telling a story or event."
+            ]
+        },
+        {
+            "tag": "tell_me_a_fact",
+            "patterns": [
+                "Tell me a curious fact"
+            ],
+            "responses": [
+                "Did you know that blue whales are the largest animals to ever exist?"
+            ]
+        },
+        {
+            "tag": "tell_me_about_the_heart",
+            "patterns": [
+                "Tell me something interesting"
+            ],
+            "responses": [
+                "A hummingbird's heart can beat up to 1,200 times per minute."
+            ]
+        },
+        {
+            "tag": "did_you_know_light",
+            "patterns": [
+                "Did you know...?"
+            ],
+            "responses": [
+                "Sunlight takes 8 minutes to reach Earth."
+            ]
+        },
+        {
+            "tag": "tell_me_a_trivia",
+            "patterns": [
+                "Tell me a trivia"
+            ],
+            "responses": [
+                "The human brain generates enough electrical impulses to power a light bulb."
+            ]
+        },
+        {
+            "tag": "surprise_me_about_cats",
+            "patterns": [
+                "Surprise me with something"
+            ],
+            "responses": [
+                "Cats have more bones than humans, a total of 244!"
+            ]
+        },
+        {
+            "tag": "tell_me_a_historical_fact",
+            "patterns": [
+                "Tell me a historical fact"
+            ],
+            "responses": [
+                "Christopher Columbus arrived in America in 1492."
+            ]
+        },
+        {
+            "tag": "what_happened_in_wwii",
+            "patterns": [
+                "What happened in World War II?"
+            ],
+            "responses": [
+                "World War II lasted from 1939 to 1945."
+            ]
+        },
+        {
+            "tag": "who_discovered_the_egyptians",
+            "patterns": [
+                "Who discovered America?"
+            ],
+            "responses": [
+                "The Egyptians built pyramids over 4,000 years ago."
+            ]
+        },
+        {
+            "tag": "tell_me_about_history",
+            "patterns": [
+                "Tell me something about history"
+            ],
+            "responses": [
+                "The French Revolution occurred in 1789."
+            ]
+        },
+        {
+            "tag": "what_do_you_know_romans",
+            "patterns": [
+                "What do you know about the Romans?"
+            ],
+            "responses": [
+                "The Romans built aqueducts that still exist today."
+            ]
+        },
+        {
+            "tag": "tell_me_the_alphabet",
+            "patterns": [
+                "Tell me the alphabet",
+                "What is the alphabet?"
+            ],
+            "responses": [
+                "The Spanish alphabet is: A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z."
+            ]
+        },
+        {
+            "tag": "tell_me_numbers_1_10",
+            "patterns": [
+                "Tell me the numbers from 1 to 10",
+                "What are the numbers from 1 to 10?"
+            ],
+            "responses": [
+                "The numbers from 1 to 10 are: one, two, three, four, five, six, seven, eight, nine, ten."
+            ]
+        },
+        {
+            "tag": "tell_me_numbers_1_20",
+            "patterns": [
+                "Tell me the numbers from 1 to 20",
+                "What are the numbers from 1 to 20?"
+            ],
+            "responses": [
+                "The numbers from 1 to 20 are: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty."
+            ]
+        },
+        {
+            "tag": "days_of_the_week",
+            "patterns": [
+                "What are the days of the week?",
+                "Tell me the days of the week"
+            ],
+            "responses": [
+                "The days of the week are: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday."
+            ]
+        },
+        {
+            "tag": "months_of_the_year",
+            "patterns": [
+                "What are the months of the year?",
+                "Tell me the months of the year"
+            ],
+            "responses": [
+                "The months of the year are: January, February, March, April, May, June, July, August, September, October, November, and December."
+            ]
+        },
+        {
+            "tag": "basic_colors",
+            "patterns": [
+                "Tell me the basic colors",
+                "What are the basic colors?"
+            ],
+            "responses": [
+                "The basic colors are: red, blue, yellow, green, orange, purple, white, and black."
+            ]
+        },
+        {
+            "tag": "geometric_shapes",
+            "patterns": [
+                "Tell me some geometric shapes",
+                "What are the geometric shapes?"
+            ],
+            "responses": [
+                "Some geometric shapes are: circle, square, triangle, rectangle, and pentagon."
+            ]
+        },
+        {
+            "tag": "basic_greetings",
+            "patterns": [
+                "Tell me a basic greeting",
+                "How can I greet?"
+            ],
+            "responses": [
+                "Hello, how are you?"
+            ]
+        },
+        {
+            "tag": "basic_farewells",
+            "patterns": [
+                "Tell me how to say goodbye",
+                "How can I say goodbye?"
+            ],
+            "responses": [
+                "You can say: goodbye, see you later, or see you."
+            ]
+        },
+        {
+            "tag": "phrase_in_english",
+            "patterns": [
+                "Tell me a basic phrase in English",
+                "How do you say something basic in English?"
+            ],
+            "responses": [
+                "A basic phrase in English is: 'Hello, how are you?' which means 'Hola, ¿cómo estás?'."
+            ]
+        },
+        {
+            "tag": "planets_of_the_solar_system",
+            "patterns": [
+                "Tell me the planets of the solar system",
+                "What are the planets of the solar system?"
+            ],
+            "responses": [
+                "The planets of the solar system are: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+            ]
+        },
+        {
+            "tag": "tell_me_marine_animals",
+            "patterns": [
+                "Tell me some marine animals",
+                "What are the marine animals?"
+            ],
+            "responses": [
+                "Some marine animals are: dolphins, sharks, whales, octopuses, and starfish."
+            ]
+        },
+        {
+            "tag": "continents_of_the_world",
+            "patterns": [
+                "Tell me the continents of the world",
+                "What are the continents of the world?"
+            ],
+            "responses": [
+                "The continents of the world are: Africa, America, Asia, Europe, Oceania, and Antarctica."
+            ]
+        },
+        {
+            "tag": "basic_chemical_elements",
+            "patterns": [
+                "Tell me some chemical elements",
+                "What are the basic chemical elements?"
+            ],
+            "responses": [
+                "Some basic chemical elements are: hydrogen, oxygen, carbon, nitrogen, and helium."
+            ]
+        },
+        {
+            "tag": "seasons_of_the_year",
+            "patterns": [
+                "Tell me the seasons of the year",
+                "What are the seasons of the year?"
+            ],
+            "responses": [
+                "The seasons of the year are: spring, summer, autumn, and winter."
+            ]
+        },
+        {
+            "tag": "available_topics",
+            "patterns": [
+                "What topics can you help me with?",
+                "What topics do you know?",
+                "What can you talk about?",
+                "What can you answer about?",
+                "What subjects do you cover?",
+                "What can you help me learn?",
+                "What areas can you assist with?"
+            ],
+            "responses": [
+                "I can help you with several topics, including:\n\n",
+                "- Greetings and farewells.\n" ,
+                "- Gratitude expressions.\n" ,
+                "- Health and wellness.\n" ,
+                "- Love advice.\n",
+                "- Animals.\n",
+                "- Basic medicine.\n",
+                "- Geography.\n",
+                "- Food.\n",
+                "- History.\n",
+                "- Art.\n",
+                "- Inventions and technology.\n",
+                "- Travel.\n",
+                "- Literature.\n",
+                "- Science and fun facts.\n",
+                "- Basic education.\n",
+                "- Astronomy.\n",
+                "- Nature and geography.\n",
+                "- Basic chemistry.\n\n",
+                "Ask about any topic, and I'll be happy to help!"
+            ]
+        },
+        {
+            "tag": "bot_profile",
+            "patterns": [
+                "Who are you?", 
+                "What do you do?", 
+                "What's your name?", 
+                "Tell me about yourself", 
+                "What is your purpose?", 
+                "Are you human?", 
+                "What can you do?", 
+                "Are you intelligent?", 
+                "How do you work?"
+            ],
+            "responses": [
+                "I am a chatbot designed to help you with information and questions.", 
+                "I am a virtual assistant ready to assist you.", 
+                "My goal is to make your life easier by answering your questions.", 
+                "I am not human, but I can have a conversation with you."
+            ],
+            "context": [""]
+        }             
     ]
 }
