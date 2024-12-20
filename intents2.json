@@ -2,48 +2,33 @@
     "intents": [
         {
             "tag": "saludo_general_hola",
-            "patterns": [
-                "Hola"
-            ],
-            "responses": [
-                "¡Hola! ¿En qué puedo ayudarte?"
-            ]
+            "patterns": ["Hola"],
+            "responses": ["¡Hola! ¿En qué puedo ayudarte?"]
         },
         {
             "tag": "saludo_general_buenos_dias",
-            "patterns": [
-                "Buenos días"
-            ],
-            "responses": [
-                "¡Buenos días! Espero que tengas un excelente día."
-            ]
+            "patterns": ["Buenos días"],
+            "responses": ["¡Buenos días! Espero que tengas un excelente día."]
         },
         {
             "tag": "saludo_general_buenas_tardes",
-            "patterns": [
-                "Buenas tardes"
-            ],
-            "responses": [
-                "¡Hola! ¿Cómo te encuentras hoy?"
-            ]
+            "patterns": ["Buenas tardes"],
+            "responses": ["¡Hola! ¿Cómo te encuentras hoy?"]
         },
         {
             "tag": "saludo_general_que_tal",
-            "patterns": [
-                "¿Qué tal?"
-            ],
-            "responses": [
-                "¡Saludos! ¿Qué necesitas hoy?"
-            ]
+            "patterns": ["¿Qué tal?"],
+            "responses": ["¡Saludos! ¿Qué necesitas hoy?"]
+        },
+        {
+            "tag": "saludo_general_como_estas",
+            "patterns": ["¿Como estas?"],
+            "responses": ["¡Estoy bien! ¿Qué necesitas hoy?"]
         },
         {
             "tag": "saludo_general_hola_amigo",
-            "patterns": [
-                "¡Hola amigo!"
-            ],
-            "responses": [
-                "¡Hola! Cuéntame en qué te puedo apoyar."
-            ]
+            "patterns": ["¡Hola amigo!"],
+            "responses": ["¡Hola! Cuéntame en qué te puedo apoyar."]
         },
         {
             "tag": "despedida_final_adios",
