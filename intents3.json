@@ -1,0 +1,583 @@
+{
+    "intents": [
+        {
+            "tag": "push_stack_python",
+            "patterns": [
+                "Dame el código para implementar push en una pila en Python",
+                "Push en Python",
+                "¿Cómo hago push en una pila usando Python?",
+                "Give me the code for stack push in Python",
+                "Stack push in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:\n\n```python\nclass Stack:\n    def __init__(self):\n        self.stack = []\n\n    def push(self, item):\n        self.stack.append(item)\n        return self.stack\n\nstack = Stack()\nprint(stack.push(5))\nprint(stack.push(10))\n```"
+            ]
+        },
+        {
+            "tag": "pop_stack_python",
+            "patterns": [
+                "Dame el código para implementar pop en una pila en Python",
+                "Pop en Python",
+                "¿Cómo hago pop en una pila usando Python?",
+                "Give me the code for stack pop in Python",
+                "Stack pop in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:\n\n```python\nclass Stack:\n    def __init__(self):\n        self.stack = []\n\n    def pop(self):\n        if not self.stack:\n            return 'Stack is empty'\n        return self.stack.pop()\n\nstack = Stack()\nstack.stack = [5, 10]\nprint(stack.pop())\nprint(stack.pop())\nprint(stack.pop())\n```"
+            ]
+        },
+        {
+            "tag": "peek_stack_python",
+            "patterns": [
+                "Dame el código para implementar peek en una pila en Python",
+                "Peek en Python",
+                "¿Cómo hago peek en una pila usando Python?",
+                "Give me the code for stack peek in Python",
+                "Stack peek in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:\n\n```python\nclass Stack:\n    def __init__(self):\n        self.stack = []\n\n    def peek(self):\n        if not self.stack:\n            return 'Stack is empty'\n        return self.stack[-1]\n\nstack = Stack()\nstack.stack = [5, 10]\nprint(stack.peek())\n```"
+            ]
+        },
+        {
+            "tag": "push_stack_javascript",
+            "patterns": [
+                "Dame el código para implementar push en una pila en JavaScript",
+                "Push en JavaScript",
+                "¿Cómo hago push en una pila usando JavaScript?",
+                "Give me the code for stack push in JavaScript",
+                "Stack push in JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:\n\n```javascript\nclass Stack {\n    constructor() {\n        this.stack = [];\n    }\n\n    push(item) {\n        this.stack.push(item);\n        return this.stack;\n    }\n}\n\nconst stack = new Stack();\nconsole.log(stack.push(5));\nconsole.log(stack.push(10));\n```"
+            ]
+        },
+        {
+            "tag": "pop_stack_javascript",
+            "patterns": [
+                "Dame el código para implementar pop en una pila en JavaScript",
+                "Pop en JavaScript",
+                "¿Cómo hago pop en una pila usando JavaScript?",
+                "Give me the code for stack pop in JavaScript",
+                "Stack pop in JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:\n\n```javascript\nclass Stack {\n    constructor() {\n        this.stack = [];\n    }\n\n    pop() {\n        if (this.stack.length === 0) {\n            return 'Stack is empty';\n        }\n        return this.stack.pop();\n    }\n}\n\nconst stack = new Stack();\nstack.stack = [5, 10];\nconsole.log(stack.pop());\nconsole.log(stack.pop());\nconsole.log(stack.pop());\n```"
+            ]
+        },
+        {
+            "tag": "peek_stack_javascript",
+            "patterns": [
+                "Dame el código para implementar peek en una pila en JavaScript",
+                "Peek en JavaScript",
+                "¿Cómo hago peek en una pila usando JavaScript?",
+                "Give me the code for stack peek in JavaScript",
+                "Stack peek en JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:\n\n```javascript\nclass Stack {\n    constructor() {\n        this.stack = [];\n    }\n\n    peek() {\n        if (this.stack.length === 0) {\n            return 'Stack is empty';\n        }\n        return this.stack[this.stack.length - 1];\n    }\n}\n\nconst stack = new Stack();\nstack.stack = [5, 10];\nconsole.log(stack.peek());\n```"
+            ]
+        },
+        {
+            "tag": "enqueue_queue_python",
+            "patterns": [
+                "Dame el código para implementar enqueue en una cola en Python",
+                "Enqueue en Python",
+                "¿Cómo hago enqueue en una cola usando Python?",
+                "Give me the code for queue enqueue in Python",
+                "Queue enqueue in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:\n\n```python\nclass Queue:\n    def __init__(self):\n        self.queue = []\n\n    def enqueue(self, item):\n        self.queue.append(item)\n        return self.queue\n\nqueue = Queue()\nprint(queue.enqueue(5))\nprint(queue.enqueue(10))\n```"
+            ]
+        },
+        {
+            "tag": "dequeue_queue_python",
+            "patterns": [
+                "Dame el código para implementar dequeue en una cola en Python",
+                "Dequeue en Python",
+                "¿Cómo hago dequeue en una cola usando Python?",
+                "Give me the code for queue dequeue in Python",
+                "Queue dequeue in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:\n\n```python\nclass Queue:\n    def __init__(self):\n        self.queue = []\n\n    def dequeue(self):\n        if not self.queue:\n            return 'Queue is empty'\n        return self.queue.pop(0)\n\nqueue = Queue()\nqueue.queue = [5, 10]\nprint(queue.dequeue())\nprint(queue.dequeue())\nprint(queue.dequeue())\n```"
+            ]
+        },
+        {
+            "tag": "enqueue_queue_javascript",
+            "patterns": [
+                "Dame el código para implementar enqueue en una cola en JavaScript",
+                "Enqueue en JavaScript",
+                "¿Cómo hago enqueue en una cola usando JavaScript?",
+                "Give me the code for queue enqueue in JavaScript",
+                "Queue enqueue in JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:\n\n```javascript\nclass Queue {\n    constructor() {\n        this.queue = [];\n    }\n\n    enqueue(item) {\n        this.queue.push(item);\n        return this.queue;\n    }\n}\n\nconst queue = new Queue();\nconsole.log(queue.enqueue(5));\nconsole.log(queue.enqueue(10));\n```"
+            ]
+        },
+        {
+            "tag": "dequeue_queue_javascript",
+            "patterns": [
+                "Dame el código para implementar dequeue en una cola en JavaScript",
+                "Dequeue en JavaScript",
+                "¿Cómo hago dequeue en una cola usando JavaScript?",
+                "Give me the code for queue dequeue in JavaScript",
+                "Queue dequeue in JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:\n\n```javascript\nclass Queue {\n    constructor() {\n        this.queue = [];\n    }\n\n    dequeue() {\n        if (this.queue.length === 0) {\n            return 'Queue is empty';\n        }\n        return this.queue.shift();\n    }\n}\n\nconst queue = new Queue();\nqueue.queue = [5, 10];\nconsole.log(queue.dequeue());\nconsole.log(queue.dequeue());\nconsole.log(queue.dequeue());\n```"
+            ]
+        },
+        {
+            "tag": "push_stack_python",
+            "patterns": [
+                "Dame el código para implementar push en una pila en Python",
+                "Push en Python",
+                "¿Cómo hago push en una pila usando Python?",
+                "Give me the code for stack push in Python",
+                "Stack push in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Stack:\n    def __init__(self):\n        self.stack = []\n\n    def push(self, item):\n        self.stack.append(item)\n        return self.stack\n\nstack = Stack()\nprint(stack.push(5))\nprint(stack.push(10))\n```"
+            ]
+        },
+        {
+            "tag": "pop_stack_python",
+            "patterns": [
+                "Dame el código para implementar pop en una pila en Python",
+                "Pop en Python",
+                "¿Cómo hago pop en una pila usando Python?",
+                "Give me the code for stack pop in Python",
+                "Stack pop in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Stack:\n    def __init__(self):\n        self.stack = []\n\n    def pop(self):\n        if not self.stack:\n            return 'Stack is empty'\n        return self.stack.pop()\n\nstack = Stack()\nstack.stack = [5, 10]\nprint(stack.pop())\nprint(stack.pop())\nprint(stack.pop())\n```"
+            ]
+        },
+        {
+            "tag": "peek_stack_python",
+            "patterns": [
+                "Dame el código para implementar peek en una pila en Python",
+                "Peek en Python",
+                "¿Cómo hago peek en una pila usando Python?",
+                "Give me the code for stack peek in Python",
+                "Stack peek in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Stack:\n    def __init__(self):\n        self.stack = []\n\n    def peek(self):\n        if not self.stack:\n            return 'Stack is empty'\n        return self.stack[-1]\n\nstack = Stack()\nstack.stack = [5, 10]\nprint(stack.peek())\n```"
+            ]
+        },
+        {
+            "tag": "push_stack_javascript",
+            "patterns": [
+                "Dame el código para implementar push en una pila en JavaScript",
+                "Push en JavaScript",
+                "¿Cómo hago push en una pila usando JavaScript?",
+                "Give me the code for stack push in JavaScript",
+                "Stack push in JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Stack {\n    constructor() {\n        this.stack = [];\n    }\n\n    push(item) {\n        this.stack.push(item);\n        return this.stack;\n    }\n}\n\nconst stack = new Stack();\nconsole.log(stack.push(5));\nconsole.log(stack.push(10));\n```"
+            ]
+        },
+        {
+            "tag": "pop_stack_javascript",
+            "patterns": [
+                "Dame el código para implementar pop en una pila en JavaScript",
+                "Pop en JavaScript",
+                "¿Cómo hago pop en una pila usando JavaScript?",
+                "Give me the code for stack pop in JavaScript",
+                "Stack pop in JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Stack {\n    constructor() {\n        this.stack = [];\n    }\n\n    pop() {\n        if (this.stack.length === 0) {\n            return 'Stack is empty';\n        }\n        return this.stack.pop();\n    }\n}\n\nconst stack = new Stack();\nstack.stack = [5, 10];\nconsole.log(stack.pop());\nconsole.log(stack.pop());\nconsole.log(stack.pop());\n```"
+            ]
+        },
+        {
+            "tag": "peek_stack_javascript",
+            "patterns": [
+                "Dame el código para implementar peek en una pila en JavaScript",
+                "Peek en JavaScript",
+                "¿Cómo hago peek en una pila usando JavaScript?",
+                "Give me the code for stack peek in JavaScript",
+                "Stack peek en JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Stack {\n    constructor() {\n        this.stack = [];\n    }\n\n    peek() {\n        if (this.stack.length === 0) {\n            return 'Stack is empty';\n        }\n        return this.stack[this.stack.length - 1];\n    }\n}\n\nconst stack = new Stack();\nstack.stack = [5, 10];\nconsole.log(stack.peek());\n```"
+            ]
+        },
+        {
+            "tag": "enqueue_queue_python",
+            "patterns": [
+                "Dame el código para implementar enqueue en una cola en Python",
+                "Enqueue en Python",
+                "¿Cómo hago enqueue en una cola usando Python?",
+                "Give me the code for queue enqueue in Python",
+                "Queue enqueue in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Queue:\n    def __init__(self):\n        self.queue = []\n\n    def enqueue(self, item):\n        self.queue.append(item)\n        return self.queue\n\nqueue = Queue()\nprint(queue.enqueue(5))\nprint(queue.enqueue(10))\n```"
+            ]
+        },
+        {
+            "tag": "dequeue_queue_python",
+            "patterns": [
+                "Dame el código para implementar dequeue en una cola en Python",
+                "Dequeue en Python",
+                "¿Cómo hago dequeue en una cola usando Python?",
+                "Give me the code for queue dequeue in Python",
+                "Queue dequeue in Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Queue:\n    def __init__(self):\n        self.queue = []\n\n    def dequeue(self):\n        if not self.queue:\n            return 'Queue is empty'\n        return self.queue.pop(0)\n\nqueue = Queue()\nqueue.queue = [5, 10]\nprint(queue.dequeue())\nprint(queue.dequeue())\nprint(queue.dequeue())\n```"
+            ]
+        },
+        {
+            "tag": "enqueue_queue_javascript",
+            "patterns": [
+                "Dame el código para implementar enqueue en una cola en JavaScript",
+                "Enqueue en JavaScript",
+                "¿Cómo hago enqueue en una cola usando JavaScript?",
+                "Give me the code for queue enqueue in JavaScript",
+                "Queue enqueue en JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Queue {\n    constructor() {\n        this.queue = [];\n    }\n\n    enqueue(item) {\n        this.queue.push(item);\n        return this.queue;\n    }\n}\n\nconst queue = new Queue();\nconsole.log(queue.enqueue(5));\nconsole.log(queue.enqueue(10));\n```"
+            ]
+        },
+        {
+            "tag": "dequeue_queue_javascript",
+            "patterns": [
+                "Dame el código para implementar dequeue en una cola en JavaScript",
+                "Dequeue en JavaScript",
+                "¿Cómo hago dequeue en una cola usando JavaScript?",
+                "Give me the code for queue dequeue in JavaScript",
+                "Queue dequeue en JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Queue {\n    constructor() {\n        this.queue = [];\n    }\n\n    dequeue() {\n        if (this.queue.length === 0) {\n            return 'Queue is empty';\n        }\n        return this.queue.shift();\n    }\n}\n\nconst queue = new Queue();\nqueue.queue = [5, 10];\nconsole.log(queue.dequeue());\nconsole.log(queue.dequeue());\nconsole.log(queue.dequeue());\n```"
+            ]
+        },
+        {
+            "tag": "binary_tree_insertion_python",
+            "patterns": [
+                "Dame el código para insertar un nodo en un árbol binario en Python",
+                "Insertar nodo en árbol binario en Python",
+                "¿Cómo inserto un nodo en un árbol binario usando Python?",
+                "Insert node in binary tree Python",
+                "Binary tree insertion Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Node:\n    def __init__(self, key):\n        self.left = None\n        self.right = None\n        self.value = key\n\ndef insert(root, key):\n    if root is None:\n        return Node(key)\n    if key < root.value:\n        root.left = insert(root.left, key)\n    else:\n        root.right = insert(root.right, key)\n    return root\n\nroot = Node(10)\ninsert(root, 5)\ninsert(root, 15)\ninsert(root, 3)\nprint('Nodo insertado en el árbol binario.')\n```"
+            ]
+        },
+        {
+            "tag": "binary_tree_insertion_javascript",
+            "patterns": [
+                "Dame el código para insertar un nodo en un árbol binario en JavaScript",
+                "Insertar nodo en árbol binario en JavaScript",
+                "¿Cómo inserto un nodo en un árbol binario usando JavaScript?",
+                "Insert node in binary tree JavaScript",
+                "Binary tree insertion JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Node {\n    constructor(value) {\n        this.value = value;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nclass BinaryTree {\n    constructor() {\n        this.root = null;\n    }\n\n    insert(value) {\n        const newNode = new Node(value);\n        if (!this.root) {\n            this.root = newNode;\n            return;\n        }\n        let current = this.root;\n        while (true) {\n            if (value < current.value) {\n                if (!current.left) {\n                    current.left = newNode;\n                    return;\n                }\n                current = current.left;\n            } else {\n                if (!current.right) {\n                    current.right = newNode;\n                    return;\n                }\n                current = current.right;\n            }\n        }\n    }\n}\n\nconst tree = new BinaryTree();\ntree.insert(10);\ntree.insert(5);\ntree.insert(15);\ntree.insert(3);\nconsole.log('Nodo insertado en el árbol binario.');\n```"
+            ]
+        },
+        {
+            "tag": "binary_tree_search_python",
+            "patterns": [
+                "Dame el código para buscar un nodo en un árbol binario en Python",
+                "Buscar nodo en árbol binario en Python",
+                "¿Cómo busco un nodo en un árbol binario usando Python?",
+                "Search node in binary tree Python",
+                "Binary tree search Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Node:\n    def __init__(self, key):\n        self.left = None\n        self.right = None\n        self.value = key\n\ndef search(root, key):\n    if root is None or root.value == key:\n        return root\n    if key < root.value:\n        return search(root.left, key)\n    return search(root.right, key)\n\nroot = Node(10)\nroot.left = Node(5)\nroot.right = Node(15)\nresult = search(root, 15)\nprint('Found' if result else 'Not Found')\n```"
+            ]
+        },
+        {
+            "tag": "binary_tree_search_javascript",
+            "patterns": [
+                "Dame el código para buscar un nodo en un árbol binario en JavaScript",
+                "Buscar nodo en árbol binario en JavaScript",
+                "¿Cómo busco un nodo en un árbol binario usando JavaScript?",
+                "Search node in binary tree JavaScript",
+                "Binary tree search JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Node {\n    constructor(value) {\n        this.value = value;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nclass BinaryTree {\n    constructor() {\n        this.root = null;\n    }\n\n    search(value, node = this.root) {\n        if (!node || node.value === value) {\n            return node;\n        }\n        if (value < node.value) {\n            return this.search(value, node.left);\n        }\n        return this.search(value, node.right);\n    }\n}\n\nconst tree = new BinaryTree();\ntree.insert(10);\ntree.insert(5);\ntree.insert(15);\nconsole.log(tree.search(15) ? 'Found' : 'Not Found');\nconsole.log(tree.search(20) ? 'Found' : 'Not Found');\n```"
+            ]
+        },
+        {
+            "tag": "binary_tree_traversals_python",
+            "patterns": [
+                "Dame el código para recorridos en un árbol binario en Python",
+                "Recorridos en árbol binario en Python",
+                "¿Cómo hago recorridos inorden, preorden y postorden en Python?",
+                "Binary tree traversals Python",
+                "Inorder, preorder, postorder traversals Python"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Node:\n    def __init__(self, key):\n        self.left = None\n        self.right = None\n        self.value = key\n\ndef inorder(root):\n    if root:\n        inorder(root.left)\n        print(root.value, end=' ')\n        inorder(root.right)\n\ndef preorder(root):\n    if root:\n        print(root.value, end=' ')\n        preorder(root.left)\n        preorder(root.right)\n\ndef postorder(root):\n    if root:\n        postorder(root.left)\n        postorder(root.right)\n        print(root.value, end=' ')\n\nroot = Node(10)\nroot.left = Node(5)\nroot.right = Node(15)\nprint('Inorder traversal:')\ninorder(root)\nprint('\nPreorder traversal:')\npreorder(root)\nprint('\nPostorder traversal:')\npostorder(root)\n```"
+            ]
+        },
+        {
+            "tag": "binary_tree_traversals_javascript",
+            "patterns": [
+                "Dame el código para recorridos en un árbol binario en JavaScript",
+                "Recorridos en árbol binario en JavaScript",
+                "¿Cómo hago recorridos inorden, preorden y postorden en JavaScript?",
+                "Binary tree traversals JavaScript",
+                "Inorder, preorder, postorder traversals JavaScript"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Node {\n    constructor(value) {\n        this.value = value;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nclass BinaryTree {\n    constructor() {\n        this.root = null;\n    }\n\n    inorder(node = this.root) {\n        if (node) {\n            this.inorder(node.left);\n            console.log(node.value);\n            this.inorder(node.right);\n        }\n    }\n\n    preorder(node = this.root) {\n        if (node) {\n            console.log(node.value);\n            this.preorder(node.left);\n            this.preorder(node.right);\n        }\n    }\n\n    postorder(node = this.root) {\n        if (node) {\n            this.postorder(node.left);\n            this.postorder(node.right);\n            console.log(node.value);\n        }\n    }\n}\n\nconst tree = new BinaryTree();\ntree.insert(10);\ntree.insert(5);\ntree.insert(15);\nconsole.log('Inorder traversal:');\ntree.inorder();\nconsole.log('Preorder traversal:');\ntree.preorder();\nconsole.log('Postorder traversal:');\ntree.postorder();\n```"
+            ]
+        },
+        {
+            "tag": "inorder_traversal_python",
+            "patterns": [
+                "¿Cómo implemento el recorrido inorden en un árbol binario en Python?",
+                "Código para recorrido inorden en árboles binarios en Python",
+                "Inorder traversal code in binary tree Python",
+                "Implementar inorden en árbol binario en Python",
+                "How to implement inorder traversal in a binary tree using Python?"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Node:\n    def __init__(self, key):\n        self.left = None\n        self.right = None\n        self.value = key\n\ndef inorder(root):\n    if root:\n        inorder(root.left)\n        print(root.value, end=' ')\n        inorder(root.right)\n\nroot = Node(10)\nroot.left = Node(5)\nroot.right = Node(15)\ninorder(root)\n```"
+            ]
+        },
+        {
+            "tag": "inorder_traversal_javascript",
+            "patterns": [
+                "¿Cómo implemento el recorrido inorden en un árbol binario en JavaScript?",
+                "Código para recorrido inorden en árboles binarios en JavaScript",
+                "Inorder traversal code in binary tree JavaScript",
+                "Implementar inorden en árbol binario en JavaScript",
+                "How to implement inorder traversal in a binary tree using JavaScript?"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Node {\n    constructor(value) {\n        this.value = value;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nclass BinaryTree {\n    constructor() {\n        this.root = null;\n    }\n\n    inorder(node = this.root) {\n        if (node) {\n            this.inorder(node.left);\n            console.log(node.value);\n            this.inorder(node.right);\n        }\n    }\n}\n\nconst tree = new BinaryTree();\ntree.root = new Node(10);\ntree.root.left = new Node(5);\ntree.root.right = new Node(15);\ntree.inorder();\n```"
+            ]
+        },
+        {
+            "tag": "preorder_traversal_python",
+            "patterns": [
+                "¿Cómo implemento el recorrido preorden en un árbol binario en Python?",
+                "Código para recorrido preorden en árboles binarios en Python",
+                "Preorder traversal code in binary tree Python",
+                "Implementar preorden en árbol binario en Python",
+                "How to implement preorder traversal in a binary tree using Python?"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Node:\n    def __init__(self, key):\n        self.left = None\n        self.right = None\n        self.value = key\n\ndef preorder(root):\n    if root:\n        print(root.value, end=' ')\n        preorder(root.left)\n        preorder(root.right)\n\nroot = Node(10)\nroot.left = Node(5)\nroot.right = Node(15)\npreorder(root)\n```"
+            ]
+        },
+        {
+            "tag": "preorder_traversal_javascript",
+            "patterns": [
+                "¿Cómo implemento el recorrido preorden en un árbol binario en JavaScript?",
+                "Código para recorrido preorden en árboles binarios en JavaScript",
+                "Preorder traversal code in binary tree JavaScript",
+                "Implementar preorden en árbol binario en JavaScript",
+                "How to implement preorder traversal in a binary tree using JavaScript?"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Node {\n    constructor(value) {\n        this.value = value;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nclass BinaryTree {\n    constructor() {\n        this.root = null;\n    }\n\n    preorder(node = this.root) {\n        if (node) {\n            console.log(node.value);\n            this.preorder(node.left);\n            this.preorder(node.right);\n        }\n    }\n}\n\nconst tree = new BinaryTree();\ntree.root = new Node(10);\ntree.root.left = new Node(5);\ntree.root.right = new Node(15);\ntree.preorder();\n```"
+            ]
+        },
+        {
+            "tag": "postorder_traversal_python",
+            "patterns": [
+                "¿Cómo implemento el recorrido postorden en un árbol binario en Python?",
+                "Código para recorrido postorden en árboles binarios en Python",
+                "Postorder traversal code in binary tree Python",
+                "Implementar postorden en árbol binario en Python",
+                "How to implement postorder traversal in a binary tree using Python?"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\nclass Node:\n    def __init__(self, key):\n        self.left = None\n        self.right = None\n        self.value = key\n\ndef postorder(root):\n    if root:\n        postorder(root.left)\n        postorder(root.right)\n        print(root.value, end=' ')\n\nroot = Node(10)\nroot.left = Node(5)\nroot.right = Node(15)\npostorder(root)\n```"
+            ]
+        },
+        {
+            "tag": "postorder_traversal_javascript",
+            "patterns": [
+                "¿Cómo implemento el recorrido postorden en un árbol binario en JavaScript?",
+                "Código para recorrido postorden en árboles binarios en JavaScript",
+                "Postorder traversal code in binary tree JavaScript",
+                "Implementar postorden en árbol binario en JavaScript",
+                "How to implement postorder traversal in a binary tree using JavaScript?"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nclass Node {\n    constructor(value) {\n        this.value = value;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nclass BinaryTree {\n    constructor() {\n        this.root = null;\n    }\n\n    postorder(node = this.root) {\n        if (node) {\n            this.postorder(node.left);\n            this.postorder(node.right);\n            console.log(node.value);\n        }\n    }\n}\n\nconst tree = new BinaryTree();\ntree.root = new Node(10);\ntree.root.left = new Node(5);\ntree.root.right = new Node(15);\ntree.postorder();\n```"
+            ]
+        },
+        {
+            "tag": "insertion_sort_python",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento por inserción en Python?",
+                "Código para ordenamiento por inserción en Python",
+                "Insertion sort code in Python",
+                "Implementar ordenamiento por inserción en Python",
+                "How to implement insertion sort in Python?"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\ndef insertion_sort(arr):\n    for i in range(1, len(arr)):\n        key = arr[i]\n        j = i - 1\n        while j >= 0 and key < arr[j]:\n            arr[j + 1] = arr[j]\n            j -= 1\n        arr[j + 1] = key\n\narr = [64, 34, 25, 12, 22, 11, 90]\ninsertion_sort(arr)\nprint(arr)\n```"
+            ]
+        },
+        {
+            "tag": "insertion_sort_javascript",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento por inserción en JavaScript?",
+                "Código para ordenamiento por inserción en JavaScript",
+                "Insertion sort code in JavaScript",
+                "Implementar ordenamiento por inserción en JavaScript",
+                "How to implement insertion sort in JavaScript?"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nfunction insertionSort(arr) {\n    for (let i = 1; i < arr.length; i++) {\n        let key = arr[i];\n        let j = i - 1;\n        while (j >= 0 && arr[j] > key) {\n            arr[j + 1] = arr[j];\n            j--;\n        }\n        arr[j + 1] = key;\n    }\n    return arr;\n}\n\nconst arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log(insertionSort(arr));\n```"
+            ]
+        },
+        {
+            "tag": "selection_sort_python",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento por selección en Python?",
+                "Código para ordenamiento por selección en Python",
+                "Selection sort code in Python",
+                "Implementar ordenamiento por selección en Python",
+                "How to implement selection sort in Python?"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\ndef selection_sort(arr):\n    for i in range(len(arr)):\n        min_idx = i\n        for j in range(i + 1, len(arr)):\n            if arr[j] < arr[min_idx]:\n                min_idx = j\n        arr[i], arr[min_idx] = arr[min_idx], arr[i]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nselection_sort(arr)\nprint(arr)\n```"
+            ]
+        },
+        {
+            "tag": "selection_sort_javascript",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento por selección en JavaScript?",
+                "Código para ordenamiento por selección en JavaScript",
+                "Selection sort code in JavaScript",
+                "Implementar ordenamiento por selección en JavaScript",
+                "How to implement selection sort in JavaScript?"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nfunction selectionSort(arr) {\n    for (let i = 0; i < arr.length; i++) {\n        let min_idx = i;\n        for (let j = i + 1; j < arr.length; j++) {\n            if (arr[j] < arr[min_idx]) {\n                min_idx = j;\n            }\n        }\n        [arr[i], arr[min_idx]] = [arr[min_idx], arr[i]];\n    }\n    return arr;\n}\n\nconst arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log(selectionSort(arr));\n```"
+            ]
+        },
+        {
+            "tag": "insertion_sort_python",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento por inserción en Python?",
+                "Código para ordenamiento por inserción en Python",
+                "Insertion sort code in Python",
+                "Implementar ordenamiento por inserción en Python",
+                "How to implement insertion sort in Python?"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\ndef insertion_sort(arr):\n    for i in range(1, len(arr)):\n        key = arr[i]\n        j = i - 1\n        while j >= 0 and key < arr[j]:\n            arr[j + 1] = arr[j]\n            j -= 1\n        arr[j + 1] = key\n\narr = [64, 34, 25, 12, 22, 11, 90]\ninsertion_sort(arr)\nprint(arr)\n```"
+            ]
+        },
+        {
+            "tag": "insertion_sort_javascript",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento por inserción en JavaScript?",
+                "Código para ordenamiento por inserción en JavaScript",
+                "Insertion sort code in JavaScript",
+                "Implementar ordenamiento por inserción en JavaScript",
+                "How to implement insertion sort in JavaScript?"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nfunction insertionSort(arr) {\n    for (let i = 1; i < arr.length; i++) {\n        let key = arr[i];\n        let j = i - 1;\n        while (j >= 0 && arr[j] > key) {\n            arr[j + 1] = arr[j];\n            j--;\n        }\n        arr[j + 1] = key;\n    }\n    return arr;\n}\n\nconst arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log(insertionSort(arr));\n```"
+            ]
+        },
+        {
+            "tag": "selection_sort_python",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento por selección en Python?",
+                "Código para ordenamiento por selección en Python",
+                "Selection sort code in Python",
+                "Implementar ordenamiento por selección en Python",
+                "How to implement selection sort in Python?"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\ndef selection_sort(arr):\n    for i in range(len(arr)):\n        min_idx = i\n        for j in range(i + 1, len(arr)):\n            if arr[j] < arr[min_idx]:\n                min_idx = j\n        arr[i], arr[min_idx] = arr[min_idx], arr[i]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nselection_sort(arr)\nprint(arr)\n```"
+            ]
+        },
+        {
+            "tag": "selection_sort_javascript",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento por selección en JavaScript?",
+                "Código para ordenamiento por selección en JavaScript",
+                "Selection sort code in JavaScript",
+                "Implementar ordenamiento por selección en JavaScript",
+                "How to implement selection sort in JavaScript?"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nfunction selectionSort(arr) {\n    for (let i = 0; i < arr.length; i++) {\n        let min_idx = i;\n        for (let j = i + 1; j < arr.length; j++) {\n            if (arr[j] < arr[min_idx]) {\n                min_idx = j;\n            }\n        }\n        [arr[i], arr[min_idx]] = [arr[min_idx], arr[i]];\n    }\n    return arr;\n}\n\nconst arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log(selectionSort(arr));\n```"
+            ]
+        },
+        {
+            "tag": "bubble_sort_python",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento de burbuja en Python?",
+                "Código para ordenamiento de burbuja en Python",
+                "Bubble sort code in Python",
+                "Implementar ordenamiento de burbuja en Python",
+                "How to implement bubble sort in Python?"
+            ],
+            "responses": [
+                "Aquí tienes el código en Python:",
+                "```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n - i - 1):\n            if arr[j] > arr[j + 1]:\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint(arr)\n```"
+            ]
+        },
+        {
+            "tag": "bubble_sort_javascript",
+            "patterns": [
+                "¿Cómo implemento el ordenamiento de burbuja en JavaScript?",
+                "Código para ordenamiento de burbuja en JavaScript",
+                "Bubble sort code in JavaScript",
+                "Implementar ordenamiento de burbuja en JavaScript",
+                "How to implement bubble sort in JavaScript?"
+            ],
+            "responses": [
+                "Aquí tienes el código en JavaScript:",
+                "```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\n\nconst arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log(bubbleSort(arr));\n```"
+            ]
+        }
+        
+    ]    
+}
