@@ -6,7 +6,7 @@ import nltk
 import sys
 import io
 from tensorflow.keras.models import load_model
-from tkinter import Tk, Text, Scrollbar, Button, END, Entry, StringVar, Frame, Label, Canvas
+from tkinter import Tk, Text, Scrollbar, Button, END, Entry, StringVar, Frame, Label, Canvas, LEFT, RIGHT
 # Descargar recursos de NLTK
 nltk.download('punkt_tab')
 nltk.download('punkt')
@@ -66,55 +66,43 @@ def generate_response(user_input):
         return "Lo siento, no entiendo tu pregunta. ¿Puedes intentarlo de otra manera?"
 
 
-
 class ChatBotApp:
     def __init__(self, root):
         self.root = root
         self.root.title("ChatBot App")
         self.root.geometry("500x600")
-        self.root.configure(bg="#2c3e50")
+        self.root.configure(bg="#1a1a2e")  # Fondo principal oscuro
 
         # Estilo general
         self.font = ("Helvetica", 12)
-        self.bg_color = "#34495e"
-        self.text_color = "#ecf0f1"
-        self.bot_bg_color = "#34495e"
-        self.user_bg_color = "#34495e"
-        self.entry_bg = "#ecf0f1"
-        self.entry_fg = "#2c3e50"
-        self.button_color = "#1abc9c"
+        self.bg_color = "#16213e"  # Azul profundo
+        self.text_color = "#ffffff"  # Texto blanco
+        self.bot_bg_color = "#4c00ff"  # Púrpura vibrante para el bot
+        self.user_bg_color = "#00a8cc"  # Azul claro para el usuario
+        self.entry_bg = "#e8e8e8"  # Gris claro para entrada
+        self.entry_fg = "#1a1a2e"  # Texto oscuro en entrada
+        self.button_color = "#ffdc00"  # Amarillo brillante para botón
 
-        # Frame principal de la conversación
-        self.chat_frame = Frame(self.root, bg=self.bg_color)
-        self.chat_frame.pack(pady=10, fill="both", expand=True)
+        # Frame principal para el canvas y scrollbar
+        self.chat_frame_container = Frame(self.root, bg=self.bg_color)
+        self.chat_frame_container.pack(pady=10, fill="both", expand=True)
 
-        # Area de texto para la conversación
-        self.text_area = Text(
-            self.chat_frame,
-            height=20,
-            width=50,
-            wrap="word",
-            font=self.font,
-            bg=self.bg_color,
-            fg=self.text_color,
-            bd=0,
-            padx=10,
-            pady=10,
-            state="normal",  # Hacerlo completamente interactivo
-            selectbackground="#1abc9c",  # Establecer el color de fondo al seleccionar
-            selectforeground="white"  # Establecer el color del texto al seleccionar
-        )
-        self.text_area.pack(side="left", fill="both", expand=True)
+        # Canvas para scroll
+        self.chat_canvas = Canvas(self.chat_frame_container, bg=self.bg_color, highlightthickness=0)
+        self.chat_canvas.pack(side="left", fill="both", expand=True)
 
         # Barra de desplazamiento
-        self.scrollbar = Scrollbar(self.chat_frame, command=self.text_area.yview, bg=self.bg_color)
+        self.scrollbar = Scrollbar(self.chat_frame_container, command=self.chat_canvas.yview)
         self.scrollbar.pack(side="right", fill="y")
-        self.text_area["yscrollcommand"] = self.scrollbar.set
+        self.chat_canvas.configure(yscrollcommand=self.scrollbar.set)
 
-        # Configuración de las etiquetas para los diferentes tipos de texto
-        self.text_area.tag_config("user", foreground="white", background=self.user_bg_color, justify="right")
-        self.text_area.tag_config("bot", foreground="white", background=self.bot_bg_color, justify="left")
-        self.text_area.tag_config("code", foreground="black", background="#ecf0f1", font=("Courier", 10, "italic"))
+        # Frame interno dentro del Canvas para los mensajes
+        self.chat_frame = Frame(self.chat_canvas, bg=self.bg_color)
+        self.chat_window = self.chat_canvas.create_window((0, 0), window=self.chat_frame, anchor="nw")
+
+        # Vincular el scroll con el Canvas
+        self.chat_frame.bind("<Configure>", lambda e: self.chat_canvas.configure(scrollregion=self.chat_canvas.bbox("all")))
+        self.chat_canvas.bind("<Configure>", self.resize_canvas)
 
         # Frame para la entrada de texto
         self.input_frame = Frame(self.root, bg=self.bg_color)
@@ -140,8 +128,8 @@ class ChatBotApp:
             command=self.send_message,
             font=self.font,
             bg=self.button_color,
-            fg=self.text_color,
-            activebackground="#16a085",
+            fg="#000000",  # Texto negro en el botón
+            activebackground="#ffc107",  # Amarillo oscuro al presionar
             bd=0,
             padx=10,
             pady=5
@@ -154,31 +142,46 @@ class ChatBotApp:
             self.display_message(user_text, "user")  # Mostrar mensaje del usuario
             self.root.update_idletasks()  # Asegurar actualización
             response = generate_response(user_text)
-            print(f"Respuesta generada: {response}")  # Depuración
             self.display_message(response, "bot")  # Mostrar respuesta del bot
         self.user_input.set("")  # Limpiar campo de entrada
 
     def display_message(self, message, sender):
-        print(f"Mostrando mensaje: {message} | Remitente: {sender}")  # Depurar
-        tag = "user" if sender == "user" else "bot"
+        # Crear burbuja con bordes redondeados
+        bubble_color = self.user_bg_color if sender == "user" else self.bot_bg_color
+        text_color = "#ffffff"  # Texto blanco
+        anchor = "e" if sender == "user" else "w"  # Alinear derecha para usuario, izquierda para bot
 
-        if "```" in message:
-            # Dividir el mensaje en texto y bloques de código
-            parts = message.split("```")
-            for i, part in enumerate(parts):
-                if i % 2 == 0:
-                    self.text_area.insert(END, f"{part.strip()}\n\n", tag)
-                else:
-                    # Mostrar bloque de código debajo del mensaje
-                    self.text_area.insert(END, f"```\n{part.strip()}\n```\n\n", "code")
+        # Crear Frame para la burbuja
+        bubble_frame = Frame(self.chat_frame, bg=self.bg_color)
+        bubble_frame.pack(fill="x", padx=10, pady=5)  # Expandir al ancho del chat
+
+        # Crear etiqueta con el mensaje
+        label = Label(
+            bubble_frame,
+            text=message,
+            wraplength=self.chat_canvas.winfo_width() - 50,  # Limitar ancho relativo al tamaño del Canvas
+            justify=LEFT if sender == "bot" else RIGHT,
+            font=self.font,
+            bg=bubble_color,
+            fg=text_color,
+            padx=10,
+            pady=5
+        )
+        # Alinear etiqueta dentro del Frame
+        # Alinear etiqueta dentro del Frame
+        if sender == "user":
+            label.pack(side="right", anchor="e", padx=5)  # Usuario a la derecha
         else:
-            # Mostrar solo texto normal si no contiene código
-            self.text_area.insert(END, f"{message.strip()}\n\n", tag)
+            label.pack(side="left", anchor="w", padx=5)  # Bot a la izquierda
 
-        # Desplazar la vista hacia abajo automáticamente
-        self.text_area.yview(END)
+        # Auto-scroll hacia abajo
+        self.chat_canvas.update_idletasks()
+        self.chat_canvas.yview_moveto(1)
 
-
+    def resize_canvas(self, event):
+        # Ajustar el ancho del Frame interno al tamaño del Canvas
+        canvas_width = event.width
+        self.chat_canvas.itemconfig(self.chat_window, width=canvas_width)
 
 
 # Ejecutar la aplicación
